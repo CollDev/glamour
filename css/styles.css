@@ -1,0 +1,52 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#canvas {
+	height: 100%;
+	left: 244px;
+	padding-left: 15px;
+	position: absolute;
+	top: 26px;
+	width: 920px;
+
+}
+
+#main {
+
+	height: 568px;
+	width: 100%;
+}
+
+#left {
+
+	height: 100%;
+	width: 214px;
+}
+
+#main-menu {
+
+	background-position: 0 -255px ;
+	width: 203px;
+	height: 372px;
+}
+
+#actual {
+
+	height: 100px;
+	width: 58px;
+}
+
+#info {
+
+	height: 100px;
+	width: 58px;
+}
+
+#container {
+
+}
+
+body {
+	background: url(../images/background.jpg) no-repeat #a23806;
+}
