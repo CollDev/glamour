@@ -20,7 +20,8 @@
     position: relative;
     margin: 0 auto 0 auto;
     width: 934px;
-    /*padding: 26px 0 0 228px;*/
+    left: 61px;
+    top: 26px;
 }
 
 #left {
@@ -110,7 +111,6 @@
 
 #info {
     font-family: sans-serif;
-    height: 112px;
     width: 148px;
     float: right;
     text-align: justify;
@@ -156,6 +156,16 @@
     z-index: 0;
 }
 
+#banner div {
+    background-position: -140px 0;
+    width: 45px;
+    height: 211px;
+    position: relative;
+    left: 572px;
+
+    z-index: 2;
+}
+
 #content-title {
     margin: 23px 0 10px 20px;
 }
@@ -175,13 +185,14 @@
 
 body {
     background-color: #a23806;
+    font-family: 'ABeeZee', sans-serif;
     text-align:center;
-    background-image: url(../images/background.jpg);
-    /*background: url(../images/web-glamour-house.jpg) no-repeat fixed #a23806;*/
+    background: url(../images/web-glamour-house.jpg) no-repeat fixed #a23806;
+    /*background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-y: scroll;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 .sprite {
@@ -198,7 +209,7 @@ body {
 
 .red-micro {
     color: #94130e;
-    font-size: 8px;
+    font-size: 10px;
     line-height: 14px;
 }
 
@@ -210,7 +221,7 @@ body {
 
 .white-micro {
     color: #fff;
-    font-size: 8px;
+    font-size: 10px;
     line-height: 14px;
 }
 
@@ -222,4 +233,9 @@ body {
 .white-big {
     color: #fff;
     font-size: 20px;
+}
+
+.scroll-pane {
+    color:#fff;
+    font-size: 13px;
 }
