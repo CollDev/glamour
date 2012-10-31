@@ -20,8 +20,8 @@
     position: relative;
     margin: 0 auto 0 auto;
     width: 934px;
-    left: 61px;
-    top: 26px;
+    /*left: 61px;
+    top: 26px;*/
 }
 
 #left {
@@ -187,12 +187,9 @@ body {
     background-color: #a23806;
     font-family: 'ABeeZee', sans-serif;
     text-align:center;
-    background: url(../images/web-glamour-house.jpg) no-repeat fixed #a23806;
-    /*background-image: url(../images/background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow-y: scroll;
-    background-size: cover;*/
+    /*background: url(../images/web-glamour-house.jpg) no-repeat fixed #a23806;*/
+    background: url(../images/background.jpg) no-repeat fixed;
+    background-size: cover;
 }
 
 .sprite {
