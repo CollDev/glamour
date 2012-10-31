@@ -4,9 +4,7 @@
 }
 #canvas {
     height: 768px;
-    margin: 0 auto 0 auto;
     text-align: left;
-    width: 1366px;
     /*
     height: 100%;
     left: 244px;
@@ -20,8 +18,9 @@
 #main {
     height: 562px;
     position: relative;
-    width: 1129px;
-    padding: 26px 0 0 228px;
+    margin: 0 auto 0 auto;
+    width: 934px;
+    /*padding: 26px 0 0 228px;*/
 }
 
 #left {
@@ -169,8 +168,9 @@
 
 #footer {
     height: 175px;
-    width: 921px;
-    padding: 0 0 0 237px;
+    position: relative;
+    margin: 0 auto 0 auto;
+    width: 934px;
 }
 
 body {
