@@ -3,8 +3,6 @@
     padding: 0px;
 }
 #canvas {
-    /*background: url(../images/web-glamour-house.jpg) no-repeat #a23806;*/
-    background: url(../images/background.jpg) no-repeat #a23806;
     height: 768px;
     margin: 0 auto 0 auto;
     text-align: left;
@@ -53,8 +51,11 @@
     padding-left: 40px;
 }
 
-#options div div {
+#options div {
     cursor: pointer;
+}
+
+#options div div {
     background: url(../images/sprites.png) no-repeat;
     background-position: 18px -52px ;
     width: 132px;
@@ -73,35 +74,30 @@
     background-position: 24px -141px ;
     width: 109px;
     height: 21px;
-    margin: 2px 0 0 0;
 }
 
 #servicios {
     background-position: 47px -115px ;
     width: 98px;
     height: 21px;
-    margin: 2px 0 0 0;
 }
 
 #productos {
     background-position: 42px -168px ;
     width: 100px;
     height: 21px;
-    margin: 3px 0 0 0;
 }
 
 #contactos {
     background-position: 42px -222px ;
     width: 100px;
     height: 21px;
-    margin: 3px 0 0 0;
 }
 
 #ubiquenos {
     background-position: 42px -86px ;
     width: 100px;
     height: 21px;
-    margin: 6px 0 0 0;
 }
 
 #actual {
@@ -166,6 +162,7 @@
 }
 
 #container {
+    text-align: justify;
     height: 252px;
     width: 700px;
 }
@@ -179,7 +176,12 @@
 body {
     background-color: #a23806;
     text-align:center;
-
+    background-image: url(../images/background.jpg);
+    /*background: url(../images/web-glamour-house.jpg) no-repeat fixed #a23806;*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: scroll;
+    background-size: cover;
 }
 
 .sprite {
