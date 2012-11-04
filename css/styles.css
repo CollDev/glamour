@@ -55,6 +55,7 @@ body {
 
 #options div {
     cursor: pointer;
+    margin-bottom: 2px;
 }
 
 #options div div {
