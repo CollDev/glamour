@@ -11,7 +11,7 @@
             /* Styles specific to this particular page */
             .scroll-pane {
                 width: 676px;
-                height: 200px;
+                height: 190px;
                 padding-left: 20px;
                 overflow: auto;
             }
@@ -27,7 +27,7 @@
                 $('.scroll-pane').jScrollPane({
                     verticalDragMaxHeight: 49,
                     verticalDragMinHeight: 49,
-                    showArrows: false,
+                    showArrows: false
                 });
             });
         </script>
@@ -40,7 +40,7 @@
                     <div id="main-menu" class="sprite">
                         <div id="logo" class="sprite"></div>
                         <div id="options">
-                            <div id="inicio" class="sprite"><div></div></div>
+                            <div id="inicio" class="sprite"><div></div></div><!-- <div></div> activo -->
                             <div id="quienes-somos" class="sprite"></div>
                             <div id="servicios" class="sprite"></div>
                             <div id="productos" class="sprite"></div>
@@ -48,7 +48,7 @@
                             <div id="ubiquenos" class="sprite"></div>
                         </div>
                     </div>
-                    <div id="actual" class="sprite actual-inicio"></div>
+                    <div id="actual" class="sprite actual-inicio"></div><!-- inicio activo -->
                     <div id="info">
                         <div class="red-small">Información técnica:</div>
                         <span class="white-micro">Nuestros productos buscan brindarte la mayor satisfacción para que te permitan mantener tu imágen de forma permanete con calidad, garantía y </span><span class="red-micro">el uso de las mejores marcas del medio.</span>
@@ -58,24 +58,59 @@
                 <div id="right">
                     <div id="top-head">
                         <div id="controls"></div>
-                        <div id="top-menu"></div>
+                        <div id="top-menu">
+                            <a href="#"><div id="home" class="sprite"></div></a>
+                            <a href="#"><div id="favoritos" class="sprite"></div></a>
+                            <a href="#"><div id="contactenos" class="sprite"></div></a>
+                        </div>
                     </div>
-                    <div id="banner" class="banner ban-1"><div class="sprite"></div></div>
+                    <div id="banner" class="banner ban-1"><div class="sprite"></div></div><!-- -1 activo -->
+                    <div id="banner-number">
+                        <a href="#"><div id="s-1" class="sprite s-1-active"></div></a><!-- -active activo -->
+                        <a href="#"><div id="s-2" class="sprite s-2"></div></a>
+                        <a href="#"><div id="s-3" class="sprite s-3"></div></a>
+                        <a href="#"><div id="s-4" class="sprite s-4"></div></a>
+                        <a href="#"><div id="s-5" class="sprite s-5"></div></a>
+                        <a href="#"><div id="s-6" class="sprite s-6"></div></a>
+                        <a href="#"><div id="s-7" class="sprite s-7"></div></a>
+                    </div>
                     <div id="container">
-                        <div id="content-title"><span class="red-big">BIENVENIDOS:</span> <span class="white-big">creamos una nueva imágen sólo para ti.</span></div>
-                        <div class="scroll-pane">
-                            <p><span class="white">Nuestra búsqueda constante en la belleza y la perfección de tu imágen, nos ha llevado a explorar y experimentar muchos estilos de belleza, estamos a la vanguardia de la apariencia personal para ti, te ofrecemos un espacio de renovación, donde podrías relajarte, compartir un momento agradable y liberar tus tensiones mientras nos permites mejorar tu imágen de manera notable y definida. Estos en las manos de un experto grupo de estilistas del medio que permiten con su experiencia asesorarte y brindarte una imágen renovada para que alcances destacar en el medio. Nuestra búsqueda constante en la belleza y la perfección de tu imágen, nos ha llevado a explorar y experimentar muchos estilos de belleza, estamos a la vanguardia de la apariencia personal para ti, te ofrecemos un espacio de renovación, donde podrás relajarte, compartir un momento agradable y</span> <span class="red">liberar tus tensiones mientras nos permites mejorar tu imágen de manera notable.</span></p><br />
-                            <p><span class="whiteo">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</span></p><br />
-                            <p><span class="whiteo">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</span></p><br />
+                        <div id="content-title"><!-- titulo del contenido activo -->
+                            <span class="red-big">BIENVENIDOS:</span> <span class="white-big">creamos una nueva imágen sólo para ti.</span>
+                        </div>
+                        <div class="scroll-pane"><!-- contenido activo -->
+                            <p><span class="white">Nuestra búsqueda constante en la belleza y la perfección de tu imágen, nos ha llevado a explorar y experimentar muchos estilos de belleza, estamos a la vanguardia de la apariencia personal para ti, te ofrecemos un espacio de renovación, donde podrías relajarte, compartir un momento agradable y liberar tus tensiones mientras nos permites mejorar tu imágen de manera notable y definida. Estos en las manos de un experto grupo de estilistas del medio que permiten con su experiencia asesorarte y brindarte una imágen renovada para que alcances destacar en el medio. Nuestra búsqueda constante en la belleza y la perfección de tu imágen, nos ha llevado a explorar y experimentar muchos estilos de belleza, estamos a la vanguardia de la apariencia personal para ti, te ofrecemos un espacio de renovación, donde podrás relajarte, compartir un momento agradable y</span> <span class="red-font">liberar tus tensiones mientras nos permites mejorar tu imágen de manera notable.</span></p><br />
+                            <p><span class="white">Lorem ipsum doglor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</span></p><br />
+                            <p><span class="white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</span></p><br />
                             <p><span class="white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</span></p><br />
                         </div>
                     </div>
                 </div>
             </div>
             <div id="footer">
-            	<div id="left-foot"></div>
-                <div id="mid-foot"></div>
-                <div id="right-foot"></div>
+                <div id="left-foot">
+                    <div class="sprite"></div>
+                    <span id="promo-title" class="red-font">Promociones 24-09-2012:</span><br />
+                    <span id="promo-1" class="white">Laceado Japones</span> <span id="promo-1-price" class="red-font">20 soles</span><br />
+                    <span id="promo-2" class="white">Tinte especial Koleston</span> <span id="promo-2-price" class="red-font">35 soles</span><br />
+                    <span id="promo-3" class="white">Premanente</span> <span id="promo-3-price" class="red-font">23 soles</span><br />
+                    <span id="promo-4" class="white">Pedicure frances</span> <span id="promo-4-price" class="red-font">35 soles</span>
+                </div>
+                <div id="mid-foot">
+                    <div class="sprite"></div>
+                    <span id="address-1">
+                    Ca. Loma linda 272<br />
+                    Dpto. 201<br />
+                    Urb. Prol. Benavides - Santiago de Surco<br />
+                    e-mail: <span class="red-font">glamoursalon@gmail.com</span></span>
+                    
+                </div>
+                <div id="right-foot">
+                    <div id="findus-down" class="sprite"></div>
+                    <div id="facebook" class="sprite"></div>
+                    <div id="youtube" class="sprite"></div>
+                    <div id="twitter" class="sprite"></div>
+                </div>
             </div>
         </div>
     </body>

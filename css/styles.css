@@ -2,33 +2,35 @@
     margin: 0px;
     padding: 0px;
 }
+
+body {
+    background-color: #a23806;
+    color:#fff;
+    font-size: 13px;
+    font-family: 'ABeeZee', sans-serif;
+    text-align: center;
+    /*background: url(../images/web-glamour-house.jpg) no-repeat #a23806 center top;*/
+    background: url(../images/background.jpg) no-repeat center top fixed;
+    background-size: cover;
+}
+
 #canvas {
     height: 768px;
     text-align: left;
-    /*
-    height: 100%;
-    left: 244px;
-    padding-left: 15px;
-    position: absolute;
-    top: 26px;
-    width: 920px;
-    */
 }
 
 #main {
-    height: 562px;
+    height: 570px;
     position: relative;
-    margin: 0 auto 0 auto;
+    margin: 26px auto 0 auto;
     width: 934px;
-    /*left: 61px;
-    top: 26px;*/
 }
 
 #left {
+    background: url("../images/banner-background.png") no-repeat 56px 8px;
     height: 100%;
     float: left;
     width: 234px;
-    
 }
 
 #main-menu {
@@ -102,7 +104,7 @@
 
 #actual {
     position: absolute;
-    bottom: 0px;
+    bottom: 8px;
     margin-left: 8px;
     float: left;
     opacity:0.4;
@@ -127,6 +129,7 @@
 }
 
 #right {
+    background: url("../images/banner-background.png") no-repeat -178px 8px;
     height: 100%;
     width: 700px;
     float: left;
@@ -148,6 +151,33 @@
     float: left;
 }
 
+#home {
+    position: relative;
+    background-position: 0 -635px ;
+    width: 22px;
+    height: 30px;
+    left: 17px;
+    top: 54px;
+}
+
+#favoritos {
+    position: relative;
+    background-position: -28px -635px ;
+    width: 32px;
+    height: 31px;
+    left: 56px;
+    top: 24px;
+}
+
+#contactenos {
+    position: relative;
+    background-position: -64px -636px ;
+    width: 43px;
+    height: 30px;
+    left: 96px;
+    top: -6px;
+}
+
 #banner {
     position: relative;
     left: -23px;
@@ -162,46 +192,199 @@
     height: 211px;
     position: relative;
     left: 572px;
-
+    opacity:0.6;
+    filter:alpha(opacity=60); /* For IE8 and earlier */
     z-index: 2;
 }
 
+#banner-number {
+    position: absolute;
+    right: 64px;
+    height: 34px;
+    width: 106px;
+    padding-top: 10px;
+}
+
+#s-1 {
+    float: left;
+    margin-right: 1px;
+}
+
+#s-2 {
+    float: left;
+    margin-right: 1px;
+}
+
+#s-3 {
+    float: left;
+    margin-right: 1px;
+}
+
+#s-4 {
+    float: left;
+    margin-right: 1px;
+}
+
+#s-5 {
+    float: left;
+    margin-right: 1px;
+}
+
+#s-6 {
+    float: left;
+    margin-right: 1px;
+}
+
+#s-7 {
+    float: left;
+    margin-right: 1px;
+}
+
 #content-title {
-    margin: 23px 0 10px 20px;
+    margin: 34px 0 10px 20px;
 }
 
 #container {
     text-align: justify;
-    height: 252px;
+    height: 227px;
     width: 700px;
 }
 
 #footer {
-    height: 175px;
+    background: url("../images/footer-background.png") no-repeat 40px 0px;
+    height: 172px;
     position: relative;
     margin: 0 auto 0 auto;
     width: 934px;
 }
 
-body {
-    background-color: #a23806;
-    font-family: 'ABeeZee', sans-serif;
-    text-align:center;
-    /*background: url(../images/web-glamour-house.jpg) no-repeat fixed #a23806;*/
-    background: url(../images/background.jpg) no-repeat fixed;
-    background-size: cover;
+#left-foot {
+    position: relative;
+    top: 21px;
+    left: 65px;
+    height: 88px;
+    width: 280px;
+    float: left;
 }
 
-.sprite {
-    background: url(../images/sprites.png) no-repeat;
+#left-foot div {
+    background-position: -97px -86px ;
+    width: 24px;
+    height: 91px;
+    position: relative;
+    left: 249px;
+    top: -1px;
+    float: left;
 }
 
-.banner {
-    background: url(../images/banner.jpg) no-repeat;
+#promo-title {
+    position: relative;
+    left: -15px;
+    top: 5px;
 }
 
-.ban-1 {
-    background-position: 0px 0px;
+#promo-1 {
+    position: relative;
+    left: -15px;
+}
+
+#promo-1-price {
+    position: relative;
+    left: 36px;
+}
+
+#promo-2 {
+    position: relative;
+    left: -15px;
+}
+
+#promo-2-price {
+    position: relative;
+}
+
+#promo-3 {
+    position: relative;
+    left: -15px;
+}
+
+#promo-3-price {
+    position: relative;
+    left: 67px;
+}
+
+#promo-4 {
+    position: relative;
+    left: -15px;
+}
+
+#promo-4-price {
+    position: relative;
+    left: 42px;
+}
+
+#mid-foot {
+    position: relative;
+    top: 21px;
+    left: 101px;
+    height: 88px;
+    width: 280px;
+    float: left;
+}
+
+#mid-foot div {
+    background-position: -97px -86px ;
+    width: 24px;
+    height: 91px;
+    position: relative;
+    left: 249px;
+    top: -1px;
+    float: left;
+}
+#address-1 {
+    position: relative;
+    left: -15px;
+    top: 10px;
+}
+
+#right-foot {
+    position: relative;
+    top: 36px;
+    left: 137px;
+    width: 200px;
+    height: 70px;
+    float: left;
+}
+
+#findus-down {
+    position: relative;
+    left: 4px;
+    background-position: -121px -637px ;
+    width: 80px;
+    height: 13px;
+}
+
+#facebook {
+    background-position: 0 -717px ;
+    width: 50px;
+    height: 48px;
+    float: left;
+}
+
+#youtube {
+    position: relative;
+    left: -5px;
+    background-position: -115px -717px ;
+    width: 49px;
+    height: 48px;
+    float: left;
+}
+
+#twitter {
+    position: relative;
+    left: 88px;
+    background-position: -56px -716px ;
+    width: 49px;
+    height: 48px;
 }
 
 .red-micro {
@@ -217,7 +400,6 @@ body {
 }
 
 .white-micro {
-    color: #fff;
     font-size: 10px;
     line-height: 14px;
 }
@@ -228,11 +410,9 @@ body {
 }
 
 .white-big {
-    color: #fff;
-    font-size: 20px;
+    font-size: 19px;
 }
 
-.scroll-pane {
-    color:#fff;
-    font-size: 13px;
+.red-font {
+    color: #94130e;
 }
