@@ -9,7 +9,7 @@ body {
     font-size: 13px;
     font-family: 'ABeeZee', sans-serif;
     text-align: center;
-    /*background: url(../images/web-glamour-house.jpg) no-repeat #a23806 center top;*/
+    /*background: url(../images/6.jpg) no-repeat #a23806 center top;*/
     background: url(../images/background.jpg) no-repeat center top fixed;
     background-size: cover;
 }
@@ -74,8 +74,14 @@ body {
 }
 
 #quienes-somos {
-    background-position: 24px -141px ;
-    width: 109px;
+    background-position: 30px -141px ;
+    width: 122px;
+    height: 21px;
+}
+
+#staff {
+    background-position: 58px -782px ;
+    width: 94px;
     height: 21px;
 }
 
@@ -408,6 +414,7 @@ body {
 .red-big {
     color: #94130e;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .white-big {
@@ -416,4 +423,67 @@ body {
 
 .red-font {
     color: #94130e;
+}
+
+#croquis-small {
+    position: relative;
+    left: 267px;
+    float: left;
+    top: -100px;
+}
+
+#form-left {
+    height: 152px;
+    width: 404px;
+}
+
+#form-right {
+    left: -70px;
+    top: -150px;
+    height: 170px;
+    width: 200px;
+    float: right;
+    position: relative;
+}
+
+label, input[type="text"] {
+    float:left;
+    display:block;
+    margin-bottom: 7px;
+}
+
+input[type="text"] {
+    border: none;
+    height: 24px;
+    background: url('../images/sprites.png') no-repeat 0 -1115px;
+    color: #fff;
+}
+
+textarea {
+    border: none;
+    color: #fff;
+    width: 208px;
+    height: 113px;
+    background: url('../images/sprites.png') no-repeat 0 -963px;
+}
+
+#submit_btn {
+    position: relative;
+    float: right;
+    right: -8px;
+    top: -12px;
+}
+
+label {
+    margin-right: 5px;
+    padding-top: 7px;
+}
+.field {
+    width: 20px;
+    overflow: auto;
+    margin: 5px 0px;
+}
+
+.error {
+    position: fixed;
 }

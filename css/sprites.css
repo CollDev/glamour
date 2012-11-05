@@ -6,150 +6,198 @@
     background: url(../images/banner.jpg) no-repeat;
 }
 
-.ban-1 {
+.ban-inicio {
     background-position: 0px 0px;
 }
 
-.ban-2 {
+.ban-quienes-somos {
     background-position: 0px -211px;
 }
 
-.ban-3 {
+.ban-staff {
     background-position: 0px -422px;
 }
 
-.ban-4 {
+.ban-servicios {
     background-position: 0px -633px;
 }
 
-.ban-5 {
+.ban-productos {
     background-position: 0px -844px;
 }
 
-.ban-6 {
+.ban-contactos {
     background-position: 0px -1055px;
 }
 
-.ban-7 {
+.ban-ubiquenos {
     background-position: 0px -1266px;
 }
 
 .s-1{
-	background-position: 0 -695px ;
-	width: 14px;
-	height: 14px;
+    background-position: 0 -695px ;
+    width: 14px;
+    height: 14px;
 }
 
 .s-1-active{
-	background-position: 0 -678px ;
-	width: 14px;
-	height: 14px;
+    background-position: 0 -678px ;
+    width: 14px;
+    height: 14px;
 }
 
 .s-2{
-	background-position: -16px -695px ;
-	width: 14px;
-	height: 14px;
+    background-position: -16px -695px ;
+    width: 14px;
+    height: 14px;
 }
 
 .s-2-active{
-	background-position: -16px -678px ;
-	width: 14px;
-	height: 14px;
+    background-position: -16px -678px ;
+    width: 14px;
+    height: 14px;
 }
 
 .s-3{
-	background-position: -32px -695px ;
-	width: 14px;
-	height: 14px;
+    background-position: -32px -695px ;
+    width: 14px;
+    height: 14px;
 }
 
 .s-3-active{
-	background-position: -33px -679px ;
-	width: 14px;
-	height: 14px;
+    background-position: -33px -679px ;
+    width: 14px;
+    height: 14px;
 }
 
 .s-4{
-	background-position: -50px -696px ;
-	width: 14px;
-	height: 14px;
+    background-position: -50px -696px ;
+    width: 14px;
+    height: 14px;
 }
 
 .s-4-active{
-	background-position: -50px -679px ;
-	width: 14px;
-	height: 14px;
+    background-position: -50px -679px ;
+    width: 14px;
+    height: 14px;
 }
 
 .s-5{
-	background-position: -67px -695px ;
-	width: 14px;
-	height: 14px;
+    background-position: -67px -695px ;
+    width: 14px;
+    height: 14px;
 }
 
 .s-5-active{
-	background-position: -67px -679px ;
-	width: 14px;
-	height: 14px;
+    background-position: -67px -679px ;
+    width: 14px;
+    height: 14px;
 }
 
 .s-6{
-	background-position: -84px -696px ;
-	width: 14px;
-	height: 14px;
+    background-position: -84px -696px ;
+    width: 14px;
+    height: 14px;
 }
 
 .s-6-active{
-	background-position: -84px -679px ;
-	width: 14px;
-	height: 14px;
+    background-position: -84px -679px ;
+    width: 14px;
+    height: 14px;
 }
 
 .s-7{
-	background-position: -84px -696px ;
-	width: 14px;
-	height: 14px;
+    background-position: -101px -696px ;
+    width: 14px;
+    height: 14px;
 }
 
 .s-7-active{
-	background-position: -84px -679px ;
-	width: 14px;
-	height: 14px;
+    background-position: -101px -679px ;
+    width: 14px;
+    height: 14px;
 }
 
 .actual-contactos{
-	background-position: -281px -277px ;
-	width: 58px;
-	height: 160px;
+    background-position: -281px -277px ;
+    width: 58px;
+    height: 160px;
 }
 
 .actual-inicio{
-	background-position: -282px -169px ;
-	width: 58px;
-	height: 96px;
+    background-position: -282px -169px ;
+    width: 58px;
+    height: 96px;
 }
 
 .actual-productos{
-	background-position: -213px 0;
-	width: 58px;
-	height: 160px;
+    background-position: -213px 0;
+    width: 58px;
+    height: 160px;
+}
+
+.actual-staff{
+    background-position: -279px -470px;
+    width: 58px;
+    height: 79px;
 }
 
 .actual-quienes-somos{
-	background-position: -211px -316px ;
-	width: 58px;
-	height: 233px;
+    background-position: -211px -316px ;
+    width: 58px;
+    height: 233px;
 }
 
 .actual-servicios{
-	background-position: -213px -168px ;
-	width: 58px;
-	height: 139px;
+    background-position: -213px -168px ;
+    width: 58px;
+    height: 139px;
 }
 
 .actual-ubiquenos{
-	background-position: -279px 0;
-	width: 58px;
-	height: 161px;
+    background-position: -279px 0;
+    width: 58px;
+    height: 161px;
+}
+
+.back-product{
+    background-position: 0 -805px;
+    width: 123px;
+    height: 155px;
+}
+
+.contact-field-comentario{
+    background-position: 0 -963px ;
+    width: 208px;
+    height: 113px;
+}
+
+.contact-field{
+    background-position: 0 -1080px ;
+    width: 264px;
+    height: 24px;
+}
+
+.contact-button{
+    background-position: -128px -805px;
+    width: 64px;
+    height: 25px;
+}
+
+.modal-close{
+    background-position: -130px -838px;
+    width: 70px;
+    height: 70px;
+}
+
+.product-description{
+    background-position: 0 -1196px;
+    width: 464px;
+    height: 196px;
+}
+
+.product-price{
+    background-position: 0 -1111px;
+    width: 339px;
+    height: 76px;
 }
