@@ -21,8 +21,9 @@ body {
 
 #main {
     height: 570px;
+    padding-top: 26px;
     position: relative;
-    margin: 26px auto 0 auto;
+    margin: 0 auto 0 auto;
     width: 934px;
 }
 

@@ -24,7 +24,7 @@ else $option = '';
         </style>
         <!-- latest jQuery direct from google's CDN -->
         <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.lightbox-0.5.pack.js"></script>
+        <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
         <!-- the mousewheel plugin -->
         <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
         <!-- the jScrollPane script -->
@@ -108,8 +108,6 @@ else $option = '';
                     Dpto. 201<br />
                     Urb. Prol. Benavides - Santiago de Surco<br />
                     e-mail: <span class="red-font">glamoursalon@gmail.com</span></span>
-                    
-
                 </div>
                 <div id="right-foot">
                     <div id="findus-down" class="sprite"></div>

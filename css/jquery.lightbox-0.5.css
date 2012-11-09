@@ -36,7 +36,7 @@
 	height: 550px;
 	margin: 0 auto;
 }
-#lightbox-container-image { padding: 10px; }
+#lightbox-container-image { }
 #lightbox-loading {
 	position: absolute;
 	top: 40%;
@@ -77,7 +77,6 @@
 	line-height: 1.4em;
 	overflow: auto;
 	width: 100%;
-	padding: 0 10px 0;
 }
 #lightbox-container-image-data {
 	padding: 0 10px; 
