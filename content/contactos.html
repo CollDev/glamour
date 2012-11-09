@@ -1,5 +1,5 @@
                         <div id="content-title">
-                            <span class="red-big">CONTÁCTOS</span> <span class="white-big">: permítenos entablar una relación.</span>
+                            <span class="red-big">CONTACTOS</span> <span class="white-big">: permítenos entablar una relación.</span>
                             <div id="contact_form">
                                 <form name="contact" action="">
                                     <div id="form-left">
@@ -17,7 +17,7 @@
 
                                         <label for="direccion" id="direccion_label">Dirección: </label>
                                         <input type="text" name="direccion" id="direccion" size="40" value="" class="text-input" />
-                                        <label class="error" for="direccion" id="direccion_error">Debe ingresar una dirección válido.</label>
+                                        <label class="error" for="direccion" id="direccion_error">Debe ingresar una dirección válida.</label>
 
                                         <label for="email" id="email_label">Email: </label>
                                         <input type="text" name="email" id="email" size="40" value="" class="text-input" />
@@ -39,40 +39,39 @@
                                 
                                 $("label").width(72);
                                 
-                                $(".button").live( 'click', function() {
-                                    // validate and process form here
+                                $(".button").live('click', function() {
+                                    var nombre     = $("input#nombre"),
+                                        apellidos  = $("input#apellidos"),
+                                        telefono   = $("input#telefono"),
+                                        direccion  = $("input#direccion"),
+                                        email      = $("input#email"),
+                                        comentario = $("input#comentario")
                                     $('.error').hide();
-                                    var nombre = $("input#nombre");
                                     if (nombre.val() == "") {
                                         //$("label#nombre_error").show();
                                         nombre.focus();
                                         return false;
                                     }
-                                    var apellidos = $("input#apellidos");
                                     if (apellidos.val() == "") {
                                         //$("label#apellidose_error").show();
                                         apellidos.focus();
                                         return false;
                                     }
-                                    var telefono = $("input#telefono");
                                     if (telefono.val() == "") {
                                         //$("label#telefono_error").show();
                                         telefono.focus();
                                         return false;
                                     }
-                                    var direccion = $("input#direccion");
                                     if (direccion.val() == "") {
                                         //$("label#direccion_error").show();
                                         direccion.focus();
                                         return false;
                                     }
-                                    var email = $("input#email");
                                     if (email.val() == "") {
                                         //$("label#email_error").show();
                                         email.focus();
                                         return false;
                                     }
-                                    var comentario = $("input#comentario");
                                     if (comentario.val() == "") {
                                         //$("label#comentario_error").show();
                                         comentario.focus();
