@@ -1,7 +1,7 @@
                         <div id="content-title">
                             <span class="red-big">CONTACTOS</span> <span class="white-big">: permítenos entablar una relación.</span>
                             <div id="contact_form">
-                                <form name="contact" action="">
+                                <form name="contact" action="" method="POST">
                                     <div id="form-left">
                                         <label for="nombre" id="nombre_label">Nombre: </label>
                                         <input type="text" name="nombre" id="nombre" size="30" value="" class="text-input" />
@@ -34,50 +34,43 @@
                             </div>
                         </div>
                         <script type="text/javascript">
-                            $(document).on("ready", function() {  
+                            $(document).on("ready", function() {
                                 $('.error').hide();
-                                
                                 $("label").width(72);
-                                
-                                $(".button").live('click', function() {
+                                $(".button").live('click', function(e) {
+                                    e.preventDefault();
                                     var nombre     = $("input#nombre"),
                                         apellidos  = $("input#apellidos"),
                                         telefono   = $("input#telefono"),
                                         direccion  = $("input#direccion"),
                                         email      = $("input#email"),
                                         comentario = $("input#comentario")
-                                    $('.error').hide();
                                     if (nombre.val() == "") {
-                                        //$("label#nombre_error").show();
+                                        /*$("label#nombre_error").show(e,setTimeout(function(){
+                                            $("label#nombre_error").hide, 1000;
+                                        }));*/
                                         nombre.focus();
-                                        return false;
                                     }
                                     if (apellidos.val() == "") {
                                         //$("label#apellidose_error").show();
                                         apellidos.focus();
-                                        return false;
                                     }
                                     if (telefono.val() == "") {
                                         //$("label#telefono_error").show();
                                         telefono.focus();
-                                        return false;
                                     }
                                     if (direccion.val() == "") {
                                         //$("label#direccion_error").show();
                                         direccion.focus();
-                                        return false;
                                     }
                                     if (email.val() == "") {
                                         //$("label#email_error").show();
                                         email.focus();
-                                        return false;
                                     }
                                     if (comentario.val() == "") {
                                         //$("label#comentario_error").show();
                                         comentario.focus();
-                                        return false;
                                     }
-
                                 });
                             });
                         </script>
