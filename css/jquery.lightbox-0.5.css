@@ -28,8 +28,8 @@
 	left: 0;
 	width: 100%;
 	z-index: 100;
-	text-align: center;
-	line-height: 0;
+	text-align: left;
+	line-height: 1;
         overflow: visible;
 }
 #jquery-lightbox a img { border: none; }

@@ -9,7 +9,7 @@ body {
     font-size: 13px;
     font-family: 'ABeeZee', sans-serif;
     text-align: center;
-    /*background: url(../images/6.jpg) no-repeat #a23806 center top;*/
+    /*background: url(../images/4.jpg) no-repeat #a23806 center top;*/
     background: url(../images/background.jpg) no-repeat center top fixed;
     background-size: cover;
 }
@@ -281,7 +281,7 @@ body {
     height: 91px;
     position: relative;
     left: 249px;
-    top: -1px;
+    top: 0px;
     float: left;
 }
 
@@ -431,6 +431,16 @@ body {
     left: 267px;
     float: left;
     top: -100px;
+}
+
+#modal-address {
+    float: right;
+    height: 100px;
+    right: -250px;
+    position: relative;
+    top: -226px;
+    width: 238px;
+    
 }
 
 #form-left {
