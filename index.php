@@ -13,6 +13,7 @@ else $option = '';
         <link type="text/css" href="css/styles.css" rel="stylesheet" media="all" />
         <link type="text/css" href="css/sprites.css" rel="stylesheet" media="all" />
         <link type="text/css" href="css/jScrollPane.css" rel="stylesheet" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
         <style type="text/css" id="page-css">
             /* Styles specific to this particular page */
             .scroll-pane {
@@ -22,9 +23,9 @@ else $option = '';
                 overflow: auto;
             }
         </style>
-        <!-- latest jQuery direct from google's CDN -->
-        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+        <script type="text/javascript" src="js/reflection.js"></script>
         <!-- the mousewheel plugin -->
         <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
         <!-- the jScrollPane script -->
@@ -38,7 +39,6 @@ else $option = '';
                 });
             });
         </script>
-<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
     </head>
     
     <body>
@@ -84,11 +84,11 @@ else $option = '';
                         <a href="/ubiquenos"><div id="s-7" class="sprite s-7<?php if ($option == 'ubiquenos') { ?>-active<?php } ?>"></div></a>
                     </div>
                     <div id="container">
-                        <?php
-                            if ($option == '') $require = 'inicio';
-                            else $require = $option;
-                            require_once 'content/' . $require . '.html';
-                        ?>
+<?php
+                        if ($option == '') $require = 'inicio';
+                        else $require = $option;
+                        require_once 'content/' . $require . '.html';
+?>
                     </div>
                 </div>
             </div>

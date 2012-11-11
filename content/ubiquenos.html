@@ -14,8 +14,13 @@
                                 <a href="images/croquis-big.jpg"><img src="images/croquis-small.png"/></a>
                             </div>
                         </div>
-                        <script type="text/javascript">                        
-                            $(function() {
-                                $('#croquis-small a').lightBox({fixedNavigation:true});
-                            });               
+                        <script type="text/javascript">
+                            $(function(){
+                                $('#croquis-small a').lightBox({fixedNavigation:false});
+                            })
+                            $('#croquis-small a img').on('click', function(e){
+                                setTimeout(function(){
+                                    $("img.reflect").reflect({/* Put custom options here */});
+                                }, 1000)
+                            });
                         </script>

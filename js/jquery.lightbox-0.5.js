@@ -27,10 +27,10 @@
 			// Configuration related to navigation
 			fixedNavigation:		false,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
 			// Configuration related to images
-			imageLoading:			'',		// (string) Path and the name of the loading icon
-			imageBtnPrev:			'images/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
-			imageBtnNext:			'images/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
-			imageBtnClose:			'images/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+			imageLoading:			'images/loading.gif',		// (string) Path and the name of the loading icon
+			imageBtnPrev:			'',			// (string) Path and the name of the prev button image
+			imageBtnNext:			'',			// (string) Path and the name of the next button image
+			imageBtnClose:			'',		// (string) Path and the name of the close btn
 			imageBlank:				'',			// (string) Path and the name of a blank image (one pixel)
 			// Configuration related to container image box
 			containerBorderSize:	0,			// (integer) If you adjust the padding in the CSS for the container, #lightbox-container-image-box, you will need to update this value
@@ -124,18 +124,15 @@
 		 *
 		 */
 		function _set_interface() {
-            var backurl = 'url("../images/modal-background.png")';
 			// Apply the HTML markup into body tag
-			$('body').append('<div id="jquery-overlay"></div><div id="jquery-lightbox"><div id="lightbox-container-image-box"><div id="lightbox-container-image"><img id="lightbox-image"><div style="" id="lightbox-nav"><a href="#" id="lightbox-nav-btnPrev"></a><a href="#" id="lightbox-nav-btnNext"></a></div><div id="lightbox-loading"><a href="#" id="lightbox-loading-link"><img src="' + settings.imageLoading + '"></a></div></div></div><div id="lightbox-container-image-data-box"><div id="lightbox-container-image-data"><div id="lightbox-image-details"><span id="lightbox-image-details-caption"></span><span id="lightbox-image-details-currentNumber"></span></div><div id="lightbox-secNav"><a href="#" id="lightbox-secNav-btnClose"><img src="' + settings.imageBtnClose + '"></a></div></div></div></div>');	
+			$('body').append('<div id="jquery-overlay"></div><div id="jquery-lightbox"><div id="lightbox-container-image-box"><div id="lightbox-container-image"><img id="lightbox-image" class="reflect"><div style="" id="lightbox-nav"><a href="#" id="lightbox-nav-btnPrev"></a><a href="#" id="lightbox-nav-btnNext"></a></div><div id="lightbox-loading"><a href="#" id="lightbox-loading-link"><img src="' + settings.imageLoading + '"></a></div></div></div><div id="lightbox-container-image-data-box"><div id="lightbox-container-image-data"><div id="lightbox-image-details"><span id="lightbox-image-details-caption"></span><span id="lightbox-image-details-currentNumber"></span></div><div id="lightbox-secNav"><a href="#" id="lightbox-secNav-btnClose"><img src="' + settings.imageBtnClose + '"></a></div></div></div></div>');	
 			// Get page sizes
 			var arrPageSizes = ___getPageSize();
 			// Style overlay and show it
 			$('#jquery-overlay').css({
-                background:         backurl,
 				width:				arrPageSizes[0],
 				height:				arrPageSizes[1]
 			}).fadeIn();
-            console.log(backurl);
 			// Get page scroll
 			var arrPageScroll = ___getPageScroll();
 			// Calculate top and left offset for the jquery-lightbox div object and show it
