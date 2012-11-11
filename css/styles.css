@@ -466,7 +466,7 @@ label, input[type="text"] {
 input[type="text"] {
     border: none;
     height: 24px;
-    background: url('../images/sprites.png') no-repeat 0 -1115px;
+    background: rgba(255, 255, 255, 0.2);
     color: #fff;
 }
 
@@ -475,7 +475,7 @@ textarea {
     color: #fff;
     width: 208px;
     height: 113px;
-    background: url('../images/sprites.png') no-repeat 0 -963px;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 #submit_btn {
@@ -497,4 +497,34 @@ label {
 
 .error {
     position: fixed;
+}
+
+#producto-small {
+    position: relative;
+    left: 197px;
+    float: left;
+    top: -153px;
+}
+
+#descripcion-producto {
+    float: right;
+    font-size: 10px;
+    text-align: left;
+    height: 153px;
+    left: 73px;
+    overflow: hidden;
+    position: relative;
+    top: -155px;
+    width: 125px;
+}
+
+#productos-list {
+    background: rgba(255, 255, 255, 0.2);
+    line-height: 1px;
+    margin-left: -10px;
+    padding: 5px;
+}
+
+#productos-list span{
+    cursor: pointer;
 }
