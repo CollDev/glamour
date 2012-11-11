@@ -16,12 +16,32 @@ else $option = '';
         <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
         <style type="text/css" id="page-css">
             /* Styles specific to this particular page */
+<?php
+        if ($option == 'productos') {
+?>
+            .jspVerticalBar {
+                left: 0;
+            }
+            .jspTrack{
+                background: url(images/scroll-area-small.png) no-repeat;
+            }
+            .scroll-pane {
+                width: 180px;
+                height: 153px;
+                overflow: auto;
+            }
+<?php
+        }else{
+?>
             .scroll-pane {
                 width: 676px;
                 height: 190px;
                 padding-left: 20px;
                 overflow: auto;
-            }
+            }            
+<?php
+        }
+?>
         </style>
         <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
@@ -68,7 +88,7 @@ else $option = '';
                     <div id="top-head">
                         <div id="controls"></div>
                         <div id="top-menu">
-                            <a href="#"><div id="home" class="sprite"></div></a>
+                            <a href="/"><div id="home" class="sprite"></div></a>
                             <a href="#"><div id="favoritos" class="sprite"></div></a>
                             <a href="#"><div id="contactenos" class="sprite"></div></a>
                         </div>
@@ -104,10 +124,11 @@ else $option = '';
                 <div id="mid-foot">
                     <div class="sprite"></div>
                     <span id="address-1">
-                    Ca. Loma linda 272<br />
-                    Dpto. 201<br />
-                    Urb. Prol. Benavides - Santiago de Surco<br />
-                    e-mail: <span class="red-font">glamoursalon@gmail.com</span></span>
+                        Ca. Loma linda 272<br />
+                        Dpto. 201<br />
+                        Urb. Prol. Benavides - Santiago de Surco<br />
+                        e-mail: <span class="red-font">glamoursalon@gmail.com</span>
+                    </span>
                 </div>
                 <div id="right-foot">
                     <div id="findus-down" class="sprite"></div>
