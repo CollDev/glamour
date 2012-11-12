@@ -12,10 +12,13 @@
  * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
  */
 #jquery-overlay {
-        background: url("../images/modal-background.png");
+        /*background: url("../images/5.jpg") no-repeat;*/
+        background: url('../images/modal-background.png');
 	position: absolute;
-	top: 0;
-	left: 0;
+	/*top: -5px;
+	left: -74px;*/
+        top: 0px;
+        left: 0px;
 	z-index: 90;
 	width: 100%;
 	height: 500px;
@@ -35,13 +38,17 @@
 #jquery-lightbox a img { border: none; }
 #lightbox-container-image-box {
 	position: relative;
-	background-color: #262626;
 	width: 550px;
 	height: 550px;
 	margin: 0 auto;
         overflow: visible;
 }
-#lightbox-container-image { overflow: visible; }
+#lightbox-container-image { 
+    position: relative;
+    overflow: visible;
+    z-index: 2000
+}
+
 #lightbox-loading {
 	position: absolute;
 	top: 40%;

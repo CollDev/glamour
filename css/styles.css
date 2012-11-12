@@ -500,9 +500,9 @@ label {
 }
 
 #producto-small {
-    position: relative;
-    left: 197px;
     float: left;
+    left: 197px;
+    position: relative;
     top: -153px;
 }
 
@@ -527,4 +527,60 @@ label {
 
 #productos-list span{
     cursor: pointer;
+}
+
+#product-price {
+    background: rgba(116, 112, 111, 0.9);
+    height: 58px;
+    left: -322px;
+    padding: 8px;
+    position: relative;
+    top: -107px;
+    width: 423px;
+    z-index: 1001;
+}
+
+#product-amount {
+    font-size: 62px;
+    float: left;
+    height: 58px;
+}
+
+#product-offer {
+    color: #9ec743;
+    font-size: 31px;
+    float: left;
+    height: 58px;
+    text-align: left;
+    word-break: break-all;
+}
+
+#product-description {
+    background: rgba(116, 112, 111, 0.9);
+    height: 198px;
+    left: 95px;
+    padding: 8px;
+    position: relative;
+    top: -424px;
+    width: 439px;
+    z-index: 1001;
+}
+
+#product-title {
+    clear: both;
+    color: #9ec743;
+    font-size: 26px;
+    float: right;
+    height: 31px;
+    margin-bottom: 7px;
+    text-align: left;
+}
+
+#product-details {
+    clear: both;
+    float: right;
+    height: 157px;
+    overflow: hidden;
+    text-align: justify;
+    width: 160px;
 }

@@ -35,7 +35,7 @@ else $option = '';
 ?>
             .scroll-pane {
                 width: 676px;
-                height: 190px;
+                height: 192px;
                 padding-left: 20px;
                 overflow: auto;
             }            
@@ -66,7 +66,7 @@ else $option = '';
             <div id="main">
                 <div id="left">
                     <div id="main-menu" class="sprite">
-                        <div id="logo" class="sprite"></div>
+                        <a href="/"><div id="logo" class="sprite"></div></a>
                         <div id="options">
                             <a href="/"><div id="inicio" class="sprite"><?php if ($option == '') { ?><div></div><?php } ?></div></a>
                             <a href="/quienes-somos"><div id="quienes-somos" class="sprite"><?php if ($option == 'quienes-somos') { ?><div></div><?php } ?></div></a>
