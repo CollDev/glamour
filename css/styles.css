@@ -10,8 +10,8 @@ body {
     font-family: 'ABeeZee', sans-serif;
     text-align: center;
     /*background: url(../images/4.jpg) no-repeat #a23806 center top;*/
-    background: url(../images/background.jpg) no-repeat center top fixed;
-    background-size: cover;
+    /*background: url(../images/background.jpg) no-repeat center top fixed;
+    background-size: cover;*/
 }
 
 #canvas {
@@ -535,7 +535,7 @@ label {
     left: -322px;
     padding: 8px;
     position: relative;
-    top: -107px;
+    top: -207px;
     width: 423px;
     z-index: 1001;
 }
@@ -561,7 +561,7 @@ label {
     left: 95px;
     padding: 8px;
     position: relative;
-    top: -424px;
+    top: -524px;
     width: 439px;
     z-index: 1001;
 }

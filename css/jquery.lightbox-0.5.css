@@ -110,7 +110,7 @@
 #lightbox-secNav-btnClose {
     background: url(../images/sprites.png) no-repeat;
     position: absolute;
-    top: -43px;
+    top: 0px;
     left: 56px;
     background-position: -130px -838px;
     width: 70px;
