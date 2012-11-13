@@ -34,35 +34,53 @@
                             <div id="producto-small">  
                                 <a rel="1" href="images/productos/producto-1-big.png"><img src="images/productos/producto-1-small.jpg"/></a>
                             </div>
-                            <div id="descripcion-producto">
+                            <div id="descripcion-producto" data-amount="S/.79">
                                 Nuestra búsqueda constante en la belleza y la perfección de tu imágen, nos ha llevado a explorar y experimentar muchos estilos de belleza, estamos a la vanguardia de la apariencia personal para ti, te ofrecemos un espacio de renovación, donde podrías relajarte, compartir un momento agradable y liberar tus tensiones mientras nos permites mejorar tu imágen de manera notable y definida.
                             </div>
+                            <div id="data-offer" style="display: none">Oferta<br />especial</div>
                         </div>
                         <script type="text/javascript">
                             $(function(){
                                 $('#producto-small a').lightBox({
                                     fixedNavigation:false,
-                                    price: 'S/.79',
-                                    offer: 'Oferta<br />especial',
+                                    price: $('#descripcion-producto').attr('data-amount'),
+                                    offer: $('#data-offer').html(),
                                     title: $('div#productos-list span').attr('data-prod', $(this).attr('rel')).html(),
-                                    details: $('#descripcion-producto').html()
+                                    details: $('#descripcion-producto').html(),
+                                    priceBlocks: true
                                 });
                             })
-                            $('#producto-small a img').on('click', function(e){
-                                $("#lightbox-container-image img").reflect({'height': 0.2});
-                                console.log('reflect');
+                            $('#producto-small a img').on('click', function(){
                                 setTimeout(function(){
-                                    $('#jquery-lightbox').css('overflow', 'hidden');
+                                    $("img.reflect").reflect({height: 0.2});
+                                    console.log('reflect');
                                 }, 1000);
                             });
                             $('div#productos-list span').on('click', function(){
+                                $('div#productos-list span').removeClass().addClass('red-micro');
+                                $(this).removeClass().addClass('white-micro');
                                 $.getJSON('content/product-details.php?product_id=' + $(this).attr('data-prod'), function(data) {
                                     $('#producto-small').html('\
                                         <a href="images/productos/producto-' + data.id + '-big.png">\n\
                                             <img src="images/productos/producto-' + data.id + '-small.jpg"/>\n\
                                         </a>');
-                                    $('#descripcion-producto').html(data.descripcion);
-                                    $('#producto-small a').lightBox({fixedNavigation:false});
+                                    $('#descripcion-producto').html(data.descripcion).text();
+                                    $('#descripcion-producto').attr('data-amount', 'S/.' + data.precio);
+                                    $('#data-offer').html(data.oferta).text();
+                                    $('#producto-small a').lightBox({
+                                        fixedNavigation:false,
+                                        price: $('#descripcion-producto').attr('data-amount'),
+                                        offer: $('#data-offer').html(),
+                                        title: $('div#productos-list span').attr('data-prod', $(this).attr('rel')).html(),
+                                        details: $('#descripcion-producto').html(),
+                                        priceBlocks: true
+                                    });
+                                    $('#producto-small a img').on('click', function(){
+                                        setTimeout(function(){
+                                            $("img.reflect").reflect({height: 0.2});
+                                            console.log('reflect');
+                                        }, 1000);
+                                    });
                                 });
                             });
                         </script>

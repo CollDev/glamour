@@ -10,8 +10,8 @@ body {
     font-family: 'ABeeZee', sans-serif;
     text-align: center;
     /*background: url(../images/4.jpg) no-repeat #a23806 center top;*/
-    /*background: url(../images/background.jpg) no-repeat center top fixed;
-    background-size: cover;*/
+    background: url(../images/background.jpg) no-repeat center top fixed;
+    background-size: cover;
 }
 
 #canvas {
@@ -436,7 +436,7 @@ body {
 #modal-address {
     float: right;
     height: 100px;
-    right: -250px;
+    right: -230px;
     position: relative;
     top: -226px;
     width: 238px;
@@ -534,9 +534,9 @@ label {
     height: 58px;
     left: -322px;
     padding: 8px;
-    position: relative;
-    top: -207px;
-    width: 423px;
+    position: absolute;
+    bottom: 0px;
+    width: 401px;
     z-index: 1001;
 }
 
@@ -552,7 +552,8 @@ label {
     float: left;
     height: 58px;
     text-align: left;
-    word-break: break-all;
+    width: 224px;
+    word-wrap: break-word;
 }
 
 #product-description {
@@ -560,8 +561,8 @@ label {
     height: 198px;
     left: 95px;
     padding: 8px;
-    position: relative;
-    top: -524px;
+    position: absolute;
+    bottom: 81px;
     width: 439px;
     z-index: 1001;
 }

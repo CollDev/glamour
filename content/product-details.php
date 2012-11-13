@@ -15,4 +15,5 @@ $query = "SELECT `id`,
 $result = mysql_query($query);
 $array = mysql_fetch_assoc($result);
 $array["descripcion"] = htmlentities($array["descripcion"]);
+$array["oferta"] = htmlentities($array["oferta"]);
 echo json_encode($array);
