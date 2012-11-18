@@ -51,12 +51,35 @@ else $option = '';
         <!-- the jScrollPane script -->
         <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
         <script id="sourcecode" type="text/javascript">
-            $(function() {
+            $(document).ready(function() {
                 $('.scroll-pane').jScrollPane({
                     verticalDragMaxHeight: 49,
                     verticalDragMinHeight: 49,
                     showArrows: false
                 });
+                var time = 3000;
+                var slides = $('.slide');
+                var numberSlides = slides.length;
+                var slideWidth = $('.slide').width();
+                var wrap = $('#bannerWrap')
+
+                wrap.width(numberSlides * slideWidth);
+
+                function moveMent() {
+                    for (r = 0; r < 100; r++) {
+                        for (i = 0; i < numberSlides - 1; i++) {
+                            wrap
+                                .delay(time)
+                                .animate({				 
+                                    left : '-=651px'
+                                })
+                        }
+                        wrap.animate({
+                            left : '0'
+                        },0);
+                    }
+                };
+                moveMent();	
             });
         </script>
     </head>
@@ -93,7 +116,25 @@ else $option = '';
                             <a href="#"><div id="contactenos" class="sprite"></div></a>
                         </div>
                     </div>
-                    <div id="banner" class="banner ban-<?php if ($option == '') echo 'inicio'; else echo $option; ?>"><div class="sprite"></div></div>
+                    <div id="bannerContainer">
+                        <div id="bannerWrap">
+<?php
+    switch ($option) {
+        case 'staff':
+            $slides = 11;
+            break;
+        default:
+            $slides = 6;
+            break;
+    }
+    for ($i = 0; $i < $slides + 1; ++$i) {
+?>
+                            <div class="slide <?php if ($option == '') echo 'inicio'; else echo $option; ?> ban-<?php if ($i == $slides) echo 1; else echo $i + 1 ?>"><div></div></div>
+<?php
+    }
+?>
+                        </div>
+                    </div>
                     <div id="banner-number">
                         <a href="/"><div id="s-1" class="sprite s-1<?php if ($option == '') { ?>-active<?php } ?>"></div></a>
                         <a href="/quienes-somos"><div id="s-2" class="sprite s-2<?php if ($option == 'quienes-somos') { ?>-active<?php } ?>"></div></a>

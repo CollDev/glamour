@@ -4,33 +4,85 @@
 
 .banner {
     background: url(../images/banner.jpg) no-repeat;
+    float: left;
+    height: 211px;
+    width: 651px;
 }
 
-.ban-inicio {
+.inicio {
+    background: url(../images/inicio.jpg) no-repeat;
+    float: left;
+    height: 211px;
+    width: 651px;
+}
+
+.quienes-somos {
+    background: url(../images/quienes-somos.jpg) no-repeat;
+    float: left;
+    height: 211px;
+    width: 651px;
+}
+
+.staff {
+    background: url(../images/staff.jpg) no-repeat;
+    float: left;
+    height: 211px;
+    width: 651px;
+}
+
+.servicios {
+    background: url(../images/servicios.jpg) no-repeat;
+    float: left;
+    height: 211px;
+    width: 651px;
+}
+
+.productos {
+    background: url(../images/productos.jpg) no-repeat;
+    float: left;
+    height: 211px;
+    width: 651px;
+}
+
+.contactos {
+    background: url(../images/contactos.jpg) no-repeat;
+    float: left;
+    height: 211px;
+    width: 651px;
+}
+
+.ubiquenos {
+    background: url(../images/ubiquenos.jpg) no-repeat;
+    float: left;
+    height: 211px;
+    width: 651px;
+}
+
+.ban-1 {
     background-position: 0px 0px;
 }
 
-.ban-quienes-somos {
+.ban-2 {
     background-position: 0px -211px;
 }
 
-.ban-staff {
+.ban-3 {
     background-position: 0px -422px;
 }
 
-.ban-servicios {
+.ban-4 {
     background-position: 0px -633px;
 }
 
-.ban-productos {
+.ban-5 {
     background-position: 0px -844px;
 }
 
-.ban-contactos {
+.ban-6 {
     background-position: 0px -1055px;
 }
 
-.ban-ubiquenos {
+.ban-7 {
     background-position: 0px -1266px;
 }
 

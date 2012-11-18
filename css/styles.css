@@ -186,6 +186,22 @@ body {
     top: -6px;
 }
 
+#bannerContainer {
+    height: 211px;
+    left: -23px;
+    overflow: hidden;
+    position: relative;
+    width: 651px;
+    z-index: 0;
+}
+
+#bannerWrap {
+    height: 211px;
+    position: absolute;
+    width: 651px;
+    left: 0;
+}
+
 #banner {
     position: relative;
     left: -23px;
@@ -194,7 +210,8 @@ body {
     z-index: 0;
 }
 
-#banner div {
+#bannerWrap div div {
+    background: url(../images/sprites.png) no-repeat;
     background-position: -140px 0;
     width: 45px;
     height: 211px;
@@ -206,7 +223,8 @@ body {
 }
 
 #banner-number {
-    position: absolute;
+    float: right;
+    position: relative;
     right: 64px;
     height: 34px;
     width: 106px;
@@ -249,10 +267,11 @@ body {
 }
 
 #content-title {
-    margin: 34px 0 10px 20px;
+    margin: 0 0 10px 20px;
 }
 
 #container {
+    float: left;
     text-align: justify;
     height: 227px;
     width: 700px;
@@ -438,7 +457,7 @@ body {
     height: 100px;
     right: -230px;
     position: relative;
-    top: -226px;
+    top: -164px;
     width: 238px;
     
 }
@@ -468,6 +487,7 @@ input[type="text"] {
     height: 24px;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
+    font-size: 14px;
 }
 
 textarea {
@@ -486,7 +506,7 @@ textarea {
 }
 
 label {
-    margin-right: 5px;
+    margin-right: 26px;
     padding-top: 7px;
 }
 .field {
