@@ -153,7 +153,7 @@
                         <div id="product-details" class="white" style="display: none; height: 0px">' + settings.details + '</div>\n\
                     </div>';
                     if (settings.addressDetails)
-                        aDetails = '<div id="modal-address">' + settings.webAddress + '</div>';
+                        aDetails = '<div id="modal-address" style="display: none; height: 0px">' + settings.webAddress + '</div>';
 			$('body').append('\n\
             <div id="jquery-overlay"></div>\n\
             <div id="jquery-lightbox">\n\
@@ -292,6 +292,7 @@
                                 $('#product-description').css('height', 198).fadeIn('fast');
                                 $('#product-title').css('height', 31).fadeIn('fast');
                                 $('#product-details').css('height', 157).fadeIn('fast');
+                                $('#modal-address').css('height', 100).fadeIn('fast');
                                 $("img.reflect").reflect({height: 0.2});
 			});
 			_preload_neighbor_images();
