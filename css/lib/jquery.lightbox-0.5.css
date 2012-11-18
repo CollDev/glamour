@@ -12,8 +12,8 @@
  * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
  */
 #jquery-overlay {
-        /*background: url("../images/5.jpg") no-repeat;*/
-        background: url('../images/modal-background.png');
+        /*background: url("../../images/5.jpg") no-repeat;*/
+        background: url('../../images/modal-background.png');
 	position: absolute;
 	/*top: -5px;
 	left: -74px;*/
@@ -108,7 +108,7 @@
 	padding-bottom: 1.0em;	
 }			
 #lightbox-secNav-btnClose {
-    background: url(../images/sprites.png) no-repeat;
+    background: url(../../images/sprites.png) no-repeat;
     position: absolute;
     top: 0px;
     left: 56px;

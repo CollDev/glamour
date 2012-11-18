@@ -15,30 +15,30 @@ else $option = '';
         <link type="text/css" href="css/lib/jquery.lightbox-0.5.css" rel="stylesheet" media="all" />
         <style type="text/css" id="page-css">
 <?php
-            if ($option == 'productos') {
+        if ($option == 'productos') {
 ?>
-                .jspVerticalBar {
-                    left: 0;
-                }
-                .jspTrack{
-                    background: url("images/scroll-area-small.png") no-repeat;
-                }
-                .scroll-pane {
-                    width: 180px;
-                    height: 153px;
-                    overflow: auto;
-                }
-<?php
-            }else{
-?>
-                .scroll-pane {
-                    width: 676px;
-                    height: 192px;
-                    padding-left: 20px;
-                    overflow: auto;
-                }            
-<?php
+            .jspVerticalBar {
+                left: 0;
             }
+            .jspTrack{
+                background: url("images/scroll-area-small.png") no-repeat;
+            }
+            .scroll-pane {
+                width: 180px;
+                height: 153px;
+                overflow: auto;
+            }
+<?php
+        }else{
+?>
+            .scroll-pane {
+                width: 676px;
+                height: 192px;
+                padding-left: 20px;
+                overflow: auto;
+            }            
+<?php
+        }
 ?>
         </style>
     </head>
@@ -78,22 +78,22 @@ else $option = '';
                     <div id="bannerContainer">
                         <div id="bannerWrap">
 <?php
-    switch ($option) {
-        case 'staff':
-            $slides = 10;
-            break;
-        case 'ubiquenos':
-            $slides = 5;
-            break;
-        default:
-            $slides = 6;
-            break;
-    }
-    for ($i = 0; $i < $slides + 1; ++$i) {
+                        switch ($option) {
+                            case 'staff':
+                                $slides = 10;
+                                break;
+                            case 'ubiquenos':
+                                $slides = 5;
+                                break;
+                            default:
+                                $slides = 6;
+                                break;
+                        }
+                        for ($i = 0; $i < $slides + 1; ++$i) {
 ?>
                             <div class="slide <?php if ($option == '') echo 'inicio'; else echo $option; ?> ban-<?php if ($i == $slides) echo 1; else echo $i + 1 ?>"><div></div></div>
 <?php
-    }
+                        }
 ?>
                         </div>
                     </div>
@@ -108,9 +108,9 @@ else $option = '';
                     </div>
                     <div id="container">
 <?php
-                        if ($option == '') $require = 'inicio';
-                        else $require = $option;
-                        require_once 'contenido/' . $require . '.html';
+                    if ($option == '') $require = 'inicio';
+                    else $require = $option;
+                    require_once 'contenido/' . $require . '.html';
 ?>
                     </div>
                 </div>
@@ -146,9 +146,28 @@ else $option = '';
         <script type="text/javascript" src="js/lib/jquery.lightbox-0.5.js"></script>
         <script type="text/javascript" src="js/lib/jquery.mousewheel.js"></script>
         <script type="text/javascript" src="js/lib/jquery.jscrollpane.min.js"></script>
-        <script type="text/javascript" src="js/inicio.js"></script>
+<?php
+        switch ($option) {
+            case 'productos':
+?>
         <script type="text/javascript" src="js/productos.js"></script>
+<?php
+                break;
+            case 'contactos':
+?>
         <script type="text/javascript" src="js/contactos.js"></script>
+<?php
+                break;
+            case 'ubiquenos':
+?>
         <script type="text/javascript" src="js/ubiquenos.js"></script>
+<?php
+                break;
+            default:
+?>
+        <script type="text/javascript" src="js/inicio.js"></script>
+<?php
+        }
+?>
     </body>
 </html>
