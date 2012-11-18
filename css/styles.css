@@ -531,11 +531,11 @@ label {
 #product-price {
     background: rgba(116, 112, 111, 0.9);
     height: 58px;
-    left: -322px;
+    left: -336px;
     padding: 8px;
     position: absolute;
     bottom: 0px;
-    width: 401px;
+    width: 400px;
     z-index: 1001;
 }
 
@@ -558,11 +558,11 @@ label {
 #product-description {
     background: rgba(116, 112, 111, 0.9);
     height: 198px;
-    left: 95px;
+    left: 81px;
     padding: 8px;
     position: absolute;
-    bottom: 81px;
-    width: 439px;
+    bottom: 74px;
+    width: 400px;
     z-index: 1001;
 }
 
@@ -582,5 +582,5 @@ label {
     height: 157px;
     overflow: hidden;
     text-align: justify;
-    width: 160px;
+    width: 224px;
 }

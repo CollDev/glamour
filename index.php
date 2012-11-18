@@ -44,8 +44,8 @@ else $option = '';
 ?>
         </style>
         <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
         <script type="text/javascript" src="js/reflection.js"></script>
+        <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
         <!-- the mousewheel plugin -->
         <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
         <!-- the jScrollPane script -->

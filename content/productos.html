@@ -30,9 +30,10 @@
                                 });
                             });
                             $('div#productos-list span').live('click', function(){
+                                var $this = $(this);
                                 $('div#productos-list span').removeClass().addClass('red-micro');
-                                $(this).removeClass().addClass('white-micro');
-                                $.getJSON('content/json.php?product_id=' + $(this).attr('data-prod'), function(product) {
+                                $this.removeClass().addClass('white-micro');
+                                $.getJSON('content/json.php?product_id=' + $this.attr('data-prod'), function(product) {
                                     $('#producto-small').html('\
                                         <a href="images/productos/producto-' + product.id + '-big.png">\n\
                                             <img src="images/productos/producto-' + product.id + '-small.jpg"/>\n\
@@ -44,14 +45,9 @@
                                         fixedNavigation:false,
                                         price: $('#descripcion-producto').attr('data-amount'),
                                         offer: $('#data-offer').html(),
-                                        title: $('div#productos-list span').attr('data-prod', $(this).attr('rel')).html(),
+                                        title: $this.text(),
                                         details: $('#descripcion-producto').html(),
                                         priceBlocks: true
-                                    });
-                                    $('#producto-small a img').on('click', function(){
-                                        setTimeout(function(){
-                                            $("img.reflect").reflect({height: 0.2});
-                                        }, 1000);
                                     });
                                 });
                             });

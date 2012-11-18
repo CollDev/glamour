@@ -286,6 +286,7 @@
 			$('#lightbox-loading').hide();
 			$('#lightbox-image').fadeIn(function() {
 				_show_image_data();
+                                $("img.reflect").reflect({height: 0.2});
 			});
 			_preload_neighbor_images();
 		};
