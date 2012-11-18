@@ -144,13 +144,13 @@
                         aDetails = '';
                     if (settings.priceBlocks)
                         pBlocks = '\n\
-                    <div id="product-price">\n\
-                        <div id="product-amount" class="white-huge">' + settings.price + '</div>\n\
-                        <div id="product-offer" class="green-huge">' + settings.offer + '</div>\n\
+                    <div id="product-price" style="display: none; height: 0px">\n\
+                        <div id="product-amount" class="white-huge" style="display: none; height: 0px">' + settings.price + '</div>\n\
+                        <div id="product-offer" class="green-huge" style="display: none; height: 0px">' + settings.offer + '</div>\n\
                     </div>\n\
-                    <div id="product-description">\n\
-                        <div id="product-title" class="green-huge">' + settings.title + '</div>\n\
-                        <div id="product-details" class="white">' + settings.details + '</div>\n\
+                    <div id="product-description" style="display: none; height: 0px">\n\
+                        <div id="product-title" class="green-huge" style="display: none; height: 0px">' + settings.title + '</div>\n\
+                        <div id="product-details" class="white" style="display: none; height: 0px">' + settings.details + '</div>\n\
                     </div>';
                     if (settings.addressDetails)
                         aDetails = '<div id="modal-address">' + settings.webAddress + '</div>';
@@ -286,6 +286,12 @@
 			$('#lightbox-loading').hide();
 			$('#lightbox-image').fadeIn(function() {
 				_show_image_data();
+                                $('#product-price').css('height', 58).fadeIn('fast');
+                                $('#product-amount').css('height', 58).fadeIn('fast');
+                                $('#product-offer').css('height', 58).fadeIn('fast');
+                                $('#product-description').css('height', 198).fadeIn('fast');
+                                $('#product-title').css('height', 31).fadeIn('fast');
+                                $('#product-details').css('height', 157).fadeIn('fast');
                                 $("img.reflect").reflect({height: 0.2});
 			});
 			_preload_neighbor_images();
