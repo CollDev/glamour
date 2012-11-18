@@ -123,6 +123,9 @@ else $option = '';
         case 'staff':
             $slides = 10;
             break;
+        case 'ubiquenos':
+            $slides = 5;
+            break;
         default:
             $slides = 6;
             break;
