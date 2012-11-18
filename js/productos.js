@@ -1,4 +1,4 @@
-                            $(document).on('ready', function(){
+                            $(function(){
                                 $.getJSON('includes/json.php?products=all', function(products) {
                                     var productList = '';
                                     for (var product in products)

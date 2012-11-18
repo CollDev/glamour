@@ -1,4 +1,4 @@
-                            $(document).on("ready", function() {
+                            $(function() {
                                 $('.error').hide();
                                 $("label").width(72);
                                 $(".button").live('click', function(e) {
