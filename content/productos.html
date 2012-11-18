@@ -3,44 +3,23 @@
                         </div>
                         <div>
                             <div class="scroll-pane">
-                                <div id="productos-list">
-                                    <span data-prod="1" class="white-micro">High voltage</span><br />
-                                    <span data-prod="2" class="red-micro">L'Oreal Professionel</span><br />
-                                    <span data-prod="3" class="red-micro">Montibello</span><br />
-                                    <span data-prod="4" class="red-micro">Revlon Professional</span><br />
-                                    <span data-prod="5" class="red-micro">Schwarzkopf Professional</span><br />
-                                    <span data-prod="6" class="red-micro">Sebastian Profesional</span><br />
-                                    <span data-prod="7" class="red-micro">Wella Professional</span><br />
-                                    <span data-prod="8" class="red-micro">Ga.Ma Italy</span><br />
-                                    <span data-prod="9" class="red-micro">ghd</span><br />
-                                    <span data-prod="10" class="red-micro">Moser</span><br />
-                                    <span data-prod="11" class="red-micro">Steinhart Professional</span><br />
-                                    <span data-prod="12" class="red-micro">etc.</span><br />
-                                    <span data-prod="13" class="red-micro">etc.</span><br />
-                                    <span data-prod="14" class="red-micro">etc.</span><br />
-                                    <span data-prod="15" class="red-micro">etc.</span><br />
-                                    <span data-prod="16" class="red-micro">etc.</span><br />
-                                    <span data-prod="17" class="red-micro">etc.</span><br />
-                                    <span data-prod="18" class="red-micro">etc.</span><br />
-                                    <span data-prod="19" class="red-micro">etc.</span><br />
-                                    <span data-prod="20" class="red-micro">etc.</span><br />
-                                    <span data-prod="21" class="red-micro">etc.</span><br />
-                                    <span data-prod="22" class="red-micro">etc.</span><br />
-                                    <span data-prod="23" class="red-micro">etc.</span><br />
-                                    <span data-prod="24" class="red-micro">etc.</span><br />
-                                    <span data-prod="25" class="red-micro">etc.</span>
-                                </div>
+                                <div id="productos-list"></div>
                             </div>
                             <div id="producto-small">  
-                                <a rel="1" href="images/productos/producto-1-big.png"><img src="images/productos/producto-1-small.jpg"/></a>
+                                <a rel="" href=""><img src="" /></a>
                             </div>
-                            <div id="descripcion-producto" data-amount="S/.79">
-                                Nuestra búsqueda constante en la belleza y la perfección de tu imágen, nos ha llevado a explorar y experimentar muchos estilos de belleza, estamos a la vanguardia de la apariencia personal para ti, te ofrecemos un espacio de renovación, donde podrías relajarte, compartir un momento agradable y liberar tus tensiones mientras nos permites mejorar tu imágen de manera notable y definida.
-                            </div>
-                            <div id="data-offer" style="display: none">Oferta<br />especial</div>
+                            <div id="descripcion-producto" data-amount=""></div>
+                            <div id="data-offer" style="display: none"></div>
                         </div>
                         <script type="text/javascript">
-                            $(function(){
+                            $(document).on('ready', function(){
+                                $.getJSON('content/json.php?products=all', function(products) {
+                                    var productList = '';
+                                    for (var product in products)
+                                        productList += '<span data-prod="' + products[product].id + '" class="red-micro">' + products[product].nombre + '</span><br />\n';
+                                    $('#productos-list').html(productList);
+                                    $('div#productos-list span').eq(0).trigger('click');
+                                });
                                 $('#producto-small a').lightBox({
                                     fixedNavigation:false,
                                     price: $('#descripcion-producto').attr('data-amount'),
@@ -49,24 +28,18 @@
                                     details: $('#descripcion-producto').html(),
                                     priceBlocks: true
                                 });
-                            })
-                            $('#producto-small a img').on('click', function(){
-                                setTimeout(function(){
-                                    $("img.reflect").reflect({height: 0.2});
-                                    console.log('reflect');
-                                }, 1000);
                             });
-                            $('div#productos-list span').on('click', function(){
+                            $('div#productos-list span').live('click', function(){
                                 $('div#productos-list span').removeClass().addClass('red-micro');
                                 $(this).removeClass().addClass('white-micro');
-                                $.getJSON('content/product-details.php?product_id=' + $(this).attr('data-prod'), function(data) {
+                                $.getJSON('content/json.php?product_id=' + $(this).attr('data-prod'), function(product) {
                                     $('#producto-small').html('\
-                                        <a href="images/productos/producto-' + data.id + '-big.png">\n\
-                                            <img src="images/productos/producto-' + data.id + '-small.jpg"/>\n\
+                                        <a href="images/productos/producto-' + product.id + '-big.png">\n\
+                                            <img src="images/productos/producto-' + product.id + '-small.jpg"/>\n\
                                         </a>');
-                                    $('#descripcion-producto').html(data.descripcion).text();
-                                    $('#descripcion-producto').attr('data-amount', 'S/.' + data.precio);
-                                    $('#data-offer').html(data.oferta).text();
+                                    $('#descripcion-producto').html(product.descripcion).text();
+                                    $('#descripcion-producto').attr('data-amount', 'S/.' + product.precio);
+                                    $('#data-offer').html(product.oferta).text();
                                     $('#producto-small a').lightBox({
                                         fixedNavigation:false,
                                         price: $('#descripcion-producto').attr('data-amount'),
@@ -78,7 +51,6 @@
                                     $('#producto-small a img').on('click', function(){
                                         setTimeout(function(){
                                             $("img.reflect").reflect({height: 0.2});
-                                            console.log('reflect');
                                         }, 1000);
                                     });
                                 });
