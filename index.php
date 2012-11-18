@@ -8,80 +8,45 @@ else $option = '';
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
-        <!-- styles needed by jScrollPane - include in your own sites -->
+        <link type="text/css" href="http://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" >
         <link type="text/css" href="css/styles.css" rel="stylesheet" media="all" />
         <link type="text/css" href="css/sprites.css" rel="stylesheet" media="all" />
         <link type="text/css" href="css/jScrollPane.css" rel="stylesheet" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+        <link type="text/css" href="css/jquery.lightbox-0.5.css" rel="stylesheet" media="screen" />
         <style type="text/css" id="page-css">
-            /* Styles specific to this particular page */
 <?php
-        if ($option == 'productos') {
+            if ($option == 'productos') {
 ?>
-            .jspVerticalBar {
-                left: 0;
-            }
-            .jspTrack{
-                background: url(images/scroll-area-small.png) no-repeat;
-            }
-            .scroll-pane {
-                width: 180px;
-                height: 153px;
-                overflow: auto;
-            }
+                .jspVerticalBar {
+                    left: 0;
+                }
+                .jspTrack{
+                    background: url("images/scroll-area-small.png") no-repeat;
+                }
+                .scroll-pane {
+                    width: 180px;
+                    height: 153px;
+                    overflow: auto;
+                }
 <?php
-        }else{
+            }else{
 ?>
-            .scroll-pane {
-                width: 676px;
-                height: 192px;
-                padding-left: 20px;
-                overflow: auto;
-            }            
+                .scroll-pane {
+                    width: 676px;
+                    height: 192px;
+                    padding-left: 20px;
+                    overflow: auto;
+                }            
 <?php
-        }
+            }
 ?>
         </style>
-        <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" src="js/reflection.js"></script>
-        <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
-        <!-- the mousewheel plugin -->
-        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-        <!-- the jScrollPane script -->
-        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
-        <script id="sourcecode" type="text/javascript">
-            $(document).ready(function() {
-                $('.scroll-pane').jScrollPane({
-                    verticalDragMaxHeight: 49,
-                    verticalDragMinHeight: 49,
-                    showArrows: false
-                });
-                var time = 3000;
-                var slides = $('.slide');
-                var numberSlides = slides.length;
-                var slideWidth = $('.slide').width();
-                var wrap = $('#bannerWrap')
-
-                wrap.width(numberSlides * slideWidth);
-
-                function moveMent() {
-                    for (r = 0; r < 100; r++) {
-                        for (i = 0; i < numberSlides - 1; i++) {
-                            wrap
-                                .delay(time)
-                                .animate({				 
-                                    left : '-=651px'
-                                })
-                        }
-                        wrap.animate({
-                            left : '0'
-                        },0);
-                    }
-                };
-                moveMent();	
-            });
-        </script>
+        <script type="text/javascript" src="js/lib/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="js/lib/reflection.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.lightbox-0.5.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.jscrollpane.min.js"></script>
+        <script src="js/inicio.js" type="text/javascript"></script>
     </head>
     
     <body>
@@ -184,5 +149,3 @@ else $option = '';
         </div>
     </body>
 </html>
-
-
