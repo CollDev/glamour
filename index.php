@@ -4,7 +4,7 @@ if(isset($_GET['option']))
     $option = $_GET['option'];
 else $option = '';
 ?>
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
