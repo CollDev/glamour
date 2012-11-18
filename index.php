@@ -8,11 +8,11 @@ else $option = '';
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link type="text/css" href="http://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" >
+        <link type="text/css" href="http://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" media="all">
         <link type="text/css" href="css/styles.css" rel="stylesheet" media="all" />
         <link type="text/css" href="css/sprites.css" rel="stylesheet" media="all" />
         <link type="text/css" href="css/jScrollPane.css" rel="stylesheet" media="all" />
-        <link type="text/css" href="css/jquery.lightbox-0.5.css" rel="stylesheet" media="screen" />
+        <link type="text/css" href="css/jquery.lightbox-0.5.css" rel="stylesheet" media="all" />
         <style type="text/css" id="page-css">
 <?php
             if ($option == 'productos') {
@@ -41,12 +41,6 @@ else $option = '';
             }
 ?>
         </style>
-        <script type="text/javascript" src="js/lib/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" src="js/lib/reflection.js"></script>
-        <script type="text/javascript" src="js/lib/jquery.lightbox-0.5.js"></script>
-        <script type="text/javascript" src="js/lib/jquery.mousewheel.js"></script>
-        <script type="text/javascript" src="js/lib/jquery.jscrollpane.min.js"></script>
-        <script src="js/inicio.js" type="text/javascript"></script>
     </head>
     
     <body>
@@ -147,5 +141,14 @@ else $option = '';
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="js/lib/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="js/lib/reflection.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.lightbox-0.5.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.jscrollpane.min.js"></script>
+        <script type="text/javascript" src="js/inicio.js"></script>
+        <script type="text/javascript" src="js/productos.js"></script>
+        <script type="text/javascript" src="js/contactos.js"></script>
+        <script type="text/javascript" src="js/ubiquenos.js"></script>
     </body>
 </html>
