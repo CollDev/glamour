@@ -121,7 +121,7 @@ else $option = '';
 <?php
     switch ($option) {
         case 'staff':
-            $slides = 11;
+            $slides = 10;
             break;
         default:
             $slides = 6;
