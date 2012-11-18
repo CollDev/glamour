@@ -151,7 +151,7 @@ else $option = '';
 <?php
                         if ($option == '') $require = 'inicio';
                         else $require = $option;
-                        require_once 'content/' . $require . '.html';
+                        require_once 'contenido/' . $require . '.html';
 ?>
                     </div>
                 </div>

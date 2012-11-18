@@ -10,49 +10,49 @@
 }
 
 .inicio {
-    background: url(../images/inicio.jpg) no-repeat;
+    background: url(../images/banner/inicio.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;
 }
 
 .quienes-somos {
-    background: url(../images/quienes-somos.jpg) no-repeat;
+    background: url(../images/banner/quienes-somos.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;
 }
 
 .staff {
-    background: url(../images/staff.jpg) no-repeat;
+    background: url(../images/banner/staff.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;
 }
 
 .servicios {
-    background: url(../images/servicios.jpg) no-repeat;
+    background: url(../images/banner/servicios.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;
 }
 
 .productos {
-    background: url(../images/productos.jpg) no-repeat;
+    background: url(../images/banner/productos.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;
 }
 
 .contactos {
-    background: url(../images/contactos.jpg) no-repeat;
+    background: url(../images/banner/contactos.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;
 }
 
 .ubiquenos {
-    background: url(../images/ubiquenos.jpg) no-repeat;
+    background: url(../images/banner/ubiquenos.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;

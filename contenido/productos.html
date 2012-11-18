@@ -13,7 +13,7 @@
                         </div>
                         <script type="text/javascript">
                             $(document).on('ready', function(){
-                                $.getJSON('content/json.php?products=all', function(products) {
+                                $.getJSON('includes/json.php?products=all', function(products) {
                                     var productList = '';
                                     for (var product in products)
                                         productList += '<span data-prod="' + products[product].id + '" class="red-micro">' + products[product].nombre + '</span><br />\n';
@@ -33,7 +33,7 @@
                                 var $this = $(this);
                                 $('div#productos-list span').removeClass().addClass('red-micro');
                                 $this.removeClass().addClass('white-micro');
-                                $.getJSON('content/json.php?product_id=' + $this.attr('data-prod'), function(product) {
+                                $.getJSON('includes/json.php?product_id=' + $this.attr('data-prod'), function(product) {
                                     $('#producto-small').html('\
                                         <a href="images/productos/producto-' + product.id + '-big.png">\n\
                                             <img src="images/productos/producto-' + product.id + '-small.jpg"/>\n\
