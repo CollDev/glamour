@@ -45,6 +45,18 @@ else $option = '';
     
     <body>
     	<div id="canvas">
+            <div id="fail" class="modal-message" style="display: none;">
+                <div></div>
+            </div>
+            <div id="success" class="modal-message" style="display: none;">
+                <div></div>
+            </div>
+            <div id="warning" class="modal-message" style="display: none;">
+                <div></div>
+            </div>
+            <div id="notice" class="modal-message" style="display: none;">
+                <div></div>
+            </div>
             <div id="main">
                 <div id="left">
                     <div id="main-menu" class="sprite">
@@ -142,14 +154,14 @@ else $option = '';
             </div>
         </div>
         <script type="text/javascript" src="js/lib/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" src="js/lib/reflection.js"></script>
-        <script type="text/javascript" src="js/lib/jquery.lightbox-0.5.js"></script>
         <script type="text/javascript" src="js/lib/jquery.mousewheel.js"></script>
         <script type="text/javascript" src="js/lib/jquery.jscrollpane.min.js"></script>
 <?php
         switch ($option) {
             case 'productos':
 ?>
+        <script type="text/javascript" src="js/lib/jquery.lightbox-0.5.js"></script>
+        <script type="text/javascript" src="js/lib/reflection.js"></script>
         <script type="text/javascript" src="js/productos.js"></script>
 <?php
                 break;
@@ -160,6 +172,8 @@ else $option = '';
                 break;
             case 'ubiquenos':
 ?>
+        <script type="text/javascript" src="js/lib/jquery.lightbox-0.5.js"></script>
+        <script type="text/javascript" src="js/lib/reflection.js"></script>
         <script type="text/javascript" src="js/ubiquenos.js"></script>
 <?php
                 break;
@@ -169,5 +183,30 @@ else $option = '';
 <?php
         }
 ?>
+        <script type="text/javascript">
+            var time = 3000,
+                slides = $('.slide'),
+                numberSlides = slides.length,
+                slideWidth = $('.slide').width(),
+                wrap = $('#bannerWrap');
+
+            wrap.width(numberSlides * slideWidth);
+
+            function moveMent() {
+                for (r = 0; r < 100; r++) {
+                    for (i = 0; i < numberSlides - 1; i++) {
+                        wrap
+                            .delay(time)
+                            .animate({				 
+                                left : '-=651px'
+                            })
+                    }
+                    wrap.animate({
+                        left : '0'
+                    },0);
+                }
+            };
+            moveMent();
+        </script>
     </body>
 </html>

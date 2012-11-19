@@ -463,17 +463,19 @@ body {
 }
 
 #form-left {
+    border: none;
     height: 152px;
     width: 404px;
 }
 
 #form-right {
-    left: -70px;
-    top: -150px;
-    height: 170px;
-    width: 200px;
+    border: none;
     float: right;
+    height: 170px;
+    left: -70px;
     position: relative;
+    top: -150px;
+    width: 200px;
 }
 
 label, input[type="text"] {
@@ -501,8 +503,6 @@ textarea {
 #submit_btn {
     position: relative;
     float: right;
-    right: -8px;
-    top: -12px;
 }
 
 label {
@@ -604,4 +604,91 @@ label {
     overflow: hidden;
     text-align: justify;
     width: 224px;
+}
+
+#msg {
+    display: none;
+    position: absolute;
+    z-index: 200;
+    background: url("../images/msg_arrow.gif") left center no-repeat;
+    padding-left: 7px
+}
+
+#msgcontent {
+    display: block;
+    color: #000;
+    background: #f3e6e6;
+    border: 2px solid #924949;
+    border-left: none;
+    padding: 5px;
+    min-width: 150px;
+    max-width: 250px
+}
+
+#fail{
+    border: 1px solid #8b0000;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAoCAYAAAAPOoFWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNq81tsOgjAMANB2ov7/7ypaN7IlIwi9rGuT8QSc9EIDAsAznxvY4pXPKr05RUE5MEVB+TyWfCEl9LZApYopCmo9C4FKSMtYoI8Bwv79aQJU4l6hXXCZrQbokJEksxHo9KMOgc6w1atHXM8K9DVC7FQnJ0i8iK3QooGgbnyKgMDygBWyYFZoqx4qS27KqLZJjA1D0jK6QJcYEQEiWv9PGkTsbqxQ8oT+ZtZB6AkdsJnQDnMoHXHLGKOgDYuCWmYhEERCI5gaamW0bnHdA3k2ltlIN+2qKRyCND0bhqSYCyTB3CAOc4WusBEIpkeBuPgJMAAX8Hs1NfqHRgAAAABJRU5ErkJggg==") rgba(247, 0, 0, 1) repeat;
+}
+
+#success{
+    border: 1px solid #50c24e;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAoCAYAAAAPOoFWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNq81tsOgjAMANB2ov7/7ypaN7IlIwi9rGuT8QSc9EIDAsAznxvY4pXPKr05RUE5MEVB+TyWfCEl9LZApYopCmo9C4FKSMtYoI8Bwv79aQJU4l6hXXCZrQbokJEksxHo9KMOgc6w1atHXM8K9DVC7FQnJ0i8iK3QooGgbnyKgMDygBWyYFZoqx4qS27KqLZJjA1D0jK6QJcYEQEiWv9PGkTsbqxQ8oT+ZtZB6AkdsJnQDnMoHXHLGKOgDYuCWmYhEERCI5gaamW0bnHdA3k2ltlIN+2qKRyCND0bhqSYCyTB3CAOc4WusBEIpkeBuPgJMAAX8Hs1NfqHRgAAAABJRU5ErkJggg==") rgba(143, 236, 143, 1) repeat;
+}
+
+#notice{
+    border: 1px solid #57b7e2;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAoCAYAAAAPOoFWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNq81tsOgjAMANB2ov7/7ypaN7IlIwi9rGuT8QSc9EIDAsAznxvY4pXPKr05RUE5MEVB+TyWfCEl9LZApYopCmo9C4FKSMtYoI8Bwv79aQJU4l6hXXCZrQbokJEksxHo9KMOgc6w1atHXM8K9DVC7FQnJ0i8iK3QooGgbnyKgMDygBWyYFZoqx4qS27KqLZJjA1D0jK6QJcYEQEiWv9PGkTsbqxQ8oT+ZtZB6AkdsJnQDnMoHXHLGKOgDYuCWmYhEERCI5gaamW0bnHdA3k2ltlIN+2qKRyCND0bhqSYCyTB3CAOc4WusBEIpkeBuPgJMAAX8Hs1NfqHRgAAAABJRU5ErkJggg==") rgba(87, 182, 255, 1) repeat;
+}
+
+#warning{
+    border: 1px solid #ffc237;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAoCAYAAAAPOoFWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNq81tsOgjAMANB2ov7/7ypaN7IlIwi9rGuT8QSc9EIDAsAznxvY4pXPKr05RUE5MEVB+TyWfCEl9LZApYopCmo9C4FKSMtYoI8Bwv79aQJU4l6hXXCZrQbokJEksxHo9KMOgc6w1atHXM8K9DVC7FQnJ0i8iK3QooGgbnyKgMDygBWyYFZoqx4qS27KqLZJjA1D0jK6QJcYEQEiWv9PGkTsbqxQ8oT+ZtZB6AkdsJnQDnMoHXHLGKOgDYuCWmYhEERCI5gaamW0bnHdA3k2ltlIN+2qKRyCND0bhqSYCyTB3CAOc4WusBEIpkeBuPgJMAAX8Hs1NfqHRgAAAABJRU5ErkJggg==") rgba(255, 234, 168, 1) repeat;
+}
+
+#fail div{
+    background: url("../images/error.png") no-repeat;
+    height: 32px;
+    width: 32px;
+    float: left;
+}
+
+#success div{
+    background: url("../images/success.png") no-repeat;
+    height: 32px;
+    width: 32px;
+    float: left;
+}
+
+#notice div{
+    background: url("../images/notice.png") no-repeat;
+    height: 32px;
+    width: 32px;
+    float: left;
+}
+
+#warning div{
+    background: url("../images/warning.png") no-repeat;
+    height: 32px;
+    width: 32px;
+    float: left;
+}
+.modal-message {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 15px 15px 15px 15px;
+    color: #FFFFFF;
+    display: none;
+    font-family: Arial,"Lucida Grande",sans-serif;
+    font-size: 18px;
+    left: 50%;
+    line-height: 30px;
+    margin: 0 auto 0 -200px;
+    min-height: 24px;
+    overflow: auto;
+    padding: 4px 10px 3px;
+    position: fixed;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000000;
+    top: 64px;
+    width: 400px;
+    z-index: 1002;
 }
