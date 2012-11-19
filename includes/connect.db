@@ -1,5 +1,5 @@
 <?php
 $dbserver = 'localhost';
-$dbusername = 'root';
-$dbpassword = 'decenio97';
-$database_name = 'glamour';
+$dbusername = 'root';//glamougt_spa
+$dbpassword = 'decenio97';//PpbXzMHcgBBC1hw8xf
+$database_name = 'glamougt_web';

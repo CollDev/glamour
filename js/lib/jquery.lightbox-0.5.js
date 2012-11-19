@@ -168,8 +168,8 @@
                             <a href="#" id="lightbox-loading-link">\n\
                                 <img src="' + settings.imageLoading + '">\n\
                             </a>\n\
-                        </div>' + pBlocks + aDetails + '\n\
-                    </div>\n\
+                        </div>' + aDetails + '\n\
+                    </div>' + pBlocks + '\n\
                 </div>\n\
                 <div id="lightbox-container-image-data-box">\n\
                     <div id="lightbox-container-image-data">\n\
