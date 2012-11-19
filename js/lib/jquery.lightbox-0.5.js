@@ -139,26 +139,6 @@
 		 *
 		 */
 		function _set_interface() {
-<<<<<<< HEAD:js/jquery.lightbox-0.5.js
-            // Apply the HTML markup into body tag
-            var pBlocks = '',
-                aDetails = '';
-                
-            if (settings.priceBlocks)
-                pBlocks = '\n\
-            <div id="product-price">\n\
-                <div id="product-amount" class="white-huge">' + settings.price + '</div>\n\
-                <div id="product-offer" class="green-huge">' + settings.offer + '</div>\n\
-            </div>\n\
-            <div id="product-description">\n\
-                <div id="product-title" class="green-huge">' + settings.title + '</div>\n\
-                <div id="product-details" class="white">' + settings.details + '</div>\n\
-            </div>';
-            
-            if (settings.addressDetails)
-                aDetails = '<div id="modal-address">' + settings.webAddress + '</div>';
-
-=======
                     // Apply the HTML markup into body tag
                     var pBlocks = '',
                         aDetails = '';
@@ -174,7 +154,6 @@
                     </div>';
                     if (settings.addressDetails)
                         aDetails = '<div id="modal-address" style="display: none; height: 0px">' + settings.webAddress + '</div>';
->>>>>>> f3894656931161f0a793c88a82a939019e90038c:js/lib/jquery.lightbox-0.5.js
 			$('body').append('\n\
             <div id="jquery-overlay"></div>\n\
             <div id="jquery-lightbox">\n\
