@@ -139,21 +139,24 @@
 		 *
 		 */
 		function _set_interface() {
-                    // Apply the HTML markup into body tag
-                    var pBlocks = '',
-                        aDetails = '';
-                    if (settings.priceBlocks)
-                        pBlocks = '\n\
-                    <div id="product-price">\n\
-                        <div id="product-amount" class="white-huge">' + settings.price + '</div>\n\
-                        <div id="product-offer" class="green-huge">' + settings.offer + '</div>\n\
-                    </div>\n\
-                    <div id="product-description">\n\
-                        <div id="product-title" class="green-huge">' + settings.title + '</div>\n\
-                        <div id="product-details" class="white">' + settings.details + '</div>\n\
-                    </div>';
-                    if (settings.addressDetails)
-                        aDetails = '<div id="modal-address">' + settings.webAddress + '</div>';
+            // Apply the HTML markup into body tag
+            var pBlocks = '',
+                aDetails = '';
+                
+            if (settings.priceBlocks)
+                pBlocks = '\n\
+            <div id="product-price">\n\
+                <div id="product-amount" class="white-huge">' + settings.price + '</div>\n\
+                <div id="product-offer" class="green-huge">' + settings.offer + '</div>\n\
+            </div>\n\
+            <div id="product-description">\n\
+                <div id="product-title" class="green-huge">' + settings.title + '</div>\n\
+                <div id="product-details" class="white">' + settings.details + '</div>\n\
+            </div>';
+            
+            if (settings.addressDetails)
+                aDetails = '<div id="modal-address">' + settings.webAddress + '</div>';
+
 			$('body').append('\n\
             <div id="jquery-overlay"></div>\n\
             <div id="jquery-lightbox">\n\
@@ -168,8 +171,8 @@
                             <a href="#" id="lightbox-loading-link">\n\
                                 <img src="' + settings.imageLoading + '">\n\
                             </a>\n\
-                        </div>' + aDetails + '\n\
-                    </div>' + pBlocks + '\n\
+                        </div>' + pBlocks + aDetails + '\n\
+                    </div>\n\
                 </div>\n\
                 <div id="lightbox-container-image-data-box">\n\
                     <div id="lightbox-container-image-data">\n\
