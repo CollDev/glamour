@@ -4,18 +4,16 @@ if(isset($_GET['option']))
     $option = $_GET['option'];
 else $option = '';
 ?>
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
-        <!-- styles needed by jScrollPane - include in your own sites -->
+        <link type="text/css" href="http://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" media="all">
         <link type="text/css" href="css/styles.css" rel="stylesheet" media="all" />
         <link type="text/css" href="css/sprites.css" rel="stylesheet" media="all" />
-        <link type="text/css" href="css/jScrollPane.css" rel="stylesheet" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+        <link type="text/css" href="css/lib/jScrollPane.css" rel="stylesheet" media="all" />
+        <link type="text/css" href="css/lib/jquery.lightbox-0.5.css" rel="stylesheet" media="all" />
         <style type="text/css" id="page-css">
-            /* Styles specific to this particular page */
 <?php
         if ($option == 'productos') {
 ?>
@@ -23,7 +21,7 @@ else $option = '';
                 left: 0;
             }
             .jspTrack{
-                background: url(images/scroll-area-small.png) no-repeat;
+                background: url("images/scroll-area-small.png") no-repeat;
             }
             .scroll-pane {
                 width: 180px;
@@ -43,26 +41,22 @@ else $option = '';
         }
 ?>
         </style>
-        <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
-        <script type="text/javascript" src="js/reflection.js"></script>
-        <!-- the mousewheel plugin -->
-        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-        <!-- the jScrollPane script -->
-        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
-        <script id="sourcecode" type="text/javascript">
-            $(function() {
-                $('.scroll-pane').jScrollPane({
-                    verticalDragMaxHeight: 49,
-                    verticalDragMinHeight: 49,
-                    showArrows: false
-                });
-            });
-        </script>
     </head>
     
     <body>
     	<div id="canvas">
+            <div id="fail" class="modal-message" style="display: none;">
+                <div></div>
+            </div>
+            <div id="success" class="modal-message" style="display: none;">
+                <div></div>
+            </div>
+            <div id="warning" class="modal-message" style="display: none;">
+                <div></div>
+            </div>
+            <div id="notice" class="modal-message" style="display: none;">
+                <div></div>
+            </div>
             <div id="main">
                 <div id="left">
                     <div id="main-menu" class="sprite">
@@ -93,7 +87,28 @@ else $option = '';
                             <a href="#"><div id="contactenos" class="sprite"></div></a>
                         </div>
                     </div>
-                    <div id="banner" class="banner ban-<?php if ($option == '') echo 'inicio'; else echo $option; ?>"><div class="sprite"></div></div>
+                    <div id="bannerContainer">
+                        <div id="bannerWrap">
+<?php
+                        switch ($option) {
+                            case 'staff':
+                                $slides = 10;
+                                break;
+                            case 'ubiquenos':
+                                $slides = 5;
+                                break;
+                            default:
+                                $slides = 6;
+                                break;
+                        }
+                        for ($i = 0; $i < $slides + 1; ++$i) {
+?>
+                            <div class="slide <?php if ($option == '') echo 'inicio'; else echo $option; ?> ban-<?php if ($i == $slides) echo 1; else echo $i + 1 ?>"><div></div></div>
+<?php
+                        }
+?>
+                        </div>
+                    </div>
                     <div id="banner-number">
                         <a href="/"><div id="s-1" class="sprite s-1<?php if ($option == '') { ?>-active<?php } ?>"></div></a>
                         <a href="/quienes-somos"><div id="s-2" class="sprite s-2<?php if ($option == 'quienes-somos') { ?>-active<?php } ?>"></div></a>
@@ -105,9 +120,9 @@ else $option = '';
                     </div>
                     <div id="container">
 <?php
-                        if ($option == '') $require = 'inicio';
-                        else $require = $option;
-                        require_once 'content/' . $require . '.html';
+                    if ($option == '') $require = 'inicio';
+                    else $require = $option;
+                    require_once 'contenido/' . $require . '.html';
 ?>
                     </div>
                 </div>
@@ -138,7 +153,60 @@ else $option = '';
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="js/lib/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.jscrollpane.min.js"></script>
+<?php
+        switch ($option) {
+            case 'productos':
+?>
+        <script type="text/javascript" src="js/lib/jquery.lightbox-0.5.js"></script>
+        <script type="text/javascript" src="js/lib/reflection.js"></script>
+        <script type="text/javascript" src="js/productos.js"></script>
+<?php
+                break;
+            case 'contactos':
+?>
+        <script type="text/javascript" src="js/contactos.js"></script>
+<?php
+                break;
+            case 'ubiquenos':
+?>
+        <script type="text/javascript" src="js/lib/jquery.lightbox-0.5.js"></script>
+        <script type="text/javascript" src="js/lib/reflection.js"></script>
+        <script type="text/javascript" src="js/ubiquenos.js"></script>
+<?php
+                break;
+            default:
+?>
+        <script type="text/javascript" src="js/inicio.js"></script>
+<?php
+        }
+?>
+        <script type="text/javascript">
+            var time = 3000,
+                slides = $('.slide'),
+                numberSlides = slides.length,
+                slideWidth = $('.slide').width(),
+                wrap = $('#bannerWrap');
+
+            wrap.width(numberSlides * slideWidth);
+
+            function moveMent() {
+                for (r = 0; r < 100; r++) {
+                    for (i = 0; i < numberSlides - 1; i++) {
+                        wrap
+                            .delay(time)
+                            .animate({				 
+                                left : '-=651px'
+                            })
+                    }
+                    wrap.animate({
+                        left : '0'
+                    },0);
+                }
+            };
+            moveMent();
+        </script>
     </body>
 </html>
-
-
