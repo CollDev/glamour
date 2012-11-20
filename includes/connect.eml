@@ -1,6 +1,6 @@
 <?php
-$emlusername   = 'admincrf@itrcinternational.com';
-$emlpassword   = '!itrci321!';
-$emlserver     = 'smtp.1and1.com';
+$emlusername   = 'contactos@glamourspa.pe';
+$emlpassword   = '!glamour321!';
+$emlserver     = 'datacenter.creatuhost.com';
 $port       = 465;
 $encryption = 'ssl';

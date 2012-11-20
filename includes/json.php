@@ -54,7 +54,7 @@ if (!empty($_GET)) {
                     ->setSubject('Mensaje desde la página web')
                     ->setFrom($email)
                     ->setTo($email)
-                    ->setBcc('jmaldonado@scitechperu.com')
+                    ->setBcc($emlusername)
                     ->setBody('Hola:' . '
 ' . '
 Nombre: ' . $nombre . '
