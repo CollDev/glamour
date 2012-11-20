@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>HTML5 Audio Player with Playlist by Tean</title>
+        
+		<link type="text/css" href="../css/lib/jScrollPane.css" rel="stylesheet" media="all" />
+        <link type="text/css" href="../css/lib/jquery.lightbox-0.5.css" rel="stylesheet" media="all" />
+		<link type="text/css" href="../css/lib/html5audio2.css" rel="stylesheet" media="all" />
+        
+		<script type="text/javascript" src="../js/lib/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery.jscrollpane.min.js"></script>
+        <script type="text/javascript" src="../js/lib/soundmanager2-nodebug-jsmin.js" ></script>
+		<script type="text/javascript" src="../js/lib/jquery.html5audio.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery.apPlaylistManager.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery.apTextScroller.min.js"></script>
+        <script type="text/javascript" src="../js/mediaPlayer.js"></script>
+    </head>
+
+    <body>
+        <div id="componentWrapper">
+                <div class="playerHolder">
+                    <div class="player_controls">
+                        <!-- previous -->
+                        <div class="controls_prev"><img src='../images/lib/tean/icons/set1/prev.png' width='25' height='26' alt='controls_prev'/></div>
+                        <!-- pause/play -->
+                        <div class="controls_toggle"><img src='../images/lib/tean/icons/set1/play.png' width='30' height='31' alt='controls_toggle'/></div>
+                        <!-- next -->
+                        <div class="controls_next"><img src='../images/lib/tean/icons/set1/next.png' width='25' height='26' alt='controls_next'/></div>
+
+                        <!-- volume -->
+                        <div class="player_volume"><img src='../images/lib/tean/icons/set1/volume.png' width='25' height='26' alt='player_volume'/></div>
+                        <div class="volume_seekbar">
+                           <div class="volume_bg"></div>
+                           <div class="volume_level"></div>
+                        </div>
+
+                    </div>
+                    <!-- progress -->
+                    <div class="player_progress">
+                        <div class="progress_bg"></div>
+                        <div class="load_progress"></div>
+                        <div class="play_progress"></div>
+                    </div>
+
+                    <!-- song name -->
+                    <div class="player_mediaName_Mask">
+                        <div class="player_mediaName">Artist Name - Artist Title</div>
+                    </div>
+
+                    <!-- song time -->
+                    <div class="player_mediaTime">
+                        <!-- current time and total time are separated so you can change the design if needed. -->
+                        <div class="player_mediaTime_current">0:00&nbsp;-&nbsp;</div><div class="player_mediaTime_total">0:00</div>
+                    </div>
+
+                    <!-- volume tooltip -->
+                    <div class="player_volume_tooltip">
+                        <div class="player_volume_tooltip_value">0</div>
+                    </div>
+
+                    <!-- progress tooltip -->
+                    <div class="player_progress_tooltip">
+                        <div class="player_progress_tooltip_value">0:00&nbsp;/&nbsp;0:00</div>
+                    </div>
+             
+                </div>
+                <div class="playlistHolder">
+                     <div class="componentPlaylist">
+                        <!-- playlist_inner: container for scroll -->
+                        <div class="playlist_inner">
+                            <ul id='playlist1' data-type='folder_read' data-path='media/audio/1/' ></ul>
+                        </div>
+                     </div>
+                </div>
+
+                <div id='publicFunctions'>
+                    <p>PUBLIC METHODS</p><br/>
+                    <ul>
+                        <!-- play active media -->
+                        <li><a href='#' onClick="jQuery.html5audio.playAudio(); return false;">Play current media</a></li>
+
+                        <!-- stop active media -->
+                        <li><a href='#' onClick="jQuery.html5audio.stopAudio(); return false;">Pause current media</a></li>
+
+                        <!-- play next media -->
+                        <li><a href='#' onClick="jQuery.html5audio.nextAudio(); return false;">Play next</a></li>
+
+                        <!-- play previous media -->
+                        <li><a href='#' onClick="jQuery.html5audio.previousAudio(); return false;">Play previous</a></li>
+
+                        <!-- play media number -->
+                        <li><a href='#' onClick="jQuery.html5audio.loadAudio(2); return false;">Play media number 2</a></li>
+
+                        <!-- toggle shuffle -->
+                        <li><a href='#' onClick="jQuery.html5audio.toggleShuffle(); return false;">Toggle shuffle</a></li>
+
+                        <!-- toggle loop -->
+                        <li><a href='#' onClick="jQuery.html5audio.toggleLoop(); return false;">Toggle loop</a></li>
+
+                        <!-- set volume (0-1) -->
+                        <li><a href='#' onClick="jQuery.html5audio.setVolume(0.5); return false;">Set volume (0.5)</a></li>
+
+                        <!-- destroy audio -->
+                        <li><a href='#' onClick="jQuery.html5audio.destroyAudio(); return false;">Destroy audio</a></li>
+
+                        <!-- reinitialize scroll (check help for more info when to use this) -->
+                        <li><a href='#' onClick="jQuery.html5audio.reinitScroll(); return false;">Reinitialize scroll</a></li>
+                    </ul>
+                 </div>
+        </div>
+    </body>
+</html>
