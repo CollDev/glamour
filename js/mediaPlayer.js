@@ -22,10 +22,10 @@
 				loopingOn:true,
 				
 				/* addNumbersInPlaylist: true/false. Prepend numbers in playlist items. */
-				addNumbersInPlaylist: true,
+				addNumbersInPlaylist: false,
 				
 				/* useSongNameScroll: true/false. Use song name scrolling. */
-				useSongNameScroll: true,
+				useSongNameScroll: false,
 				/* scrollSpeed: speed of the scroll (number higher than zero). */
 				scrollSpeed: 1,
 				/* scrollSeparator: String to append between scrolling song name. */
@@ -37,19 +37,19 @@
 				seekTooltipSeparator: '&nbsp;/&nbsp;',
 				
 				/* buttonsUrl: url of the buttons for normal and rollover state, so I dont hardcode them in jquery. */
-				buttonsUrl: {prev:    '../images/lib/tean/icons/set3/prev.png',    prevOn: '../images/lib/tean/icons/set3/prev_on.png', 
-                                             next:    '../images/lib/tean/icons/set3/next.png',    nextOn: '../images/lib/tean/icons/set3/next_on.png', 
-                                             pause:   '../images/lib/tean/icons/set3/pause.png',   pauseOn: '../images/lib/tean/icons/set3/pause_on.png',
-                                             play:    '../images/lib/tean/icons/set3/play.png',    playOn: '../images/lib/tean/icons/set3/play_on.png',
-                                             volume:  '../images/lib/tean/icons/set3/volume.png',  volumeOn: '../images/lib/tean/icons/set3/volume_on.png', 
-                                             mute:    '../images/lib/tean/icons/set3/mute.png',    muteOn: '../images/lib/tean/icons/set3/mute_on.png', 
-                                             loop:    '../images/lib/tean/icons/set3/loop.png',    loopOn: '../images/lib/tean/icons/set3/loop_on.png',
-                                             shuffle: '../images/lib/tean/icons/set3/shuffle.png', shuffleOn: '../images/lib/tean/icons/set3/shuffle_on.png'}
+				buttonsUrl: {prev:    '../images/lib/tean/icons/set3/prev.png',    prevOn:    '../images/lib/tean/icons/set3/prev_on.png', 
+                             next:    '../images/lib/tean/icons/set3/next.png',    nextOn:    '../images/lib/tean/icons/set3/next_on.png', 
+                             pause:   '../images/lib/tean/icons/set3/pause.png',   pauseOn:   '../images/lib/tean/icons/set3/pause_on.png',
+                             play:    '../images/lib/tean/icons/set3/play.png',    playOn:    '../images/lib/tean/icons/set3/play_on.png',
+                             volume:  '../images/lib/tean/icons/set3/volume.png',  volumeOn:  '../images/lib/tean/icons/set3/volume_on.png', 
+                             mute:    '../images/lib/tean/icons/set3/mute.png',    muteOn:    '../images/lib/tean/icons/set3/mute_on.png', 
+                             loop:    '../images/lib/tean/icons/set3/loop.png',    loopOn:    '../images/lib/tean/icons/set3/loop_on.png',
+                             shuffle: '../images/lib/tean/icons/set3/shuffle.png', shuffleOn: '../images/lib/tean/icons/set3/shuffle_on.png'}
 			};
 			
 			//sound manager settings (http://www.schillmania.com/projects/soundmanager2/)
 			soundManager.allowScriptAccess = 'always';
-			soundManager.debugMode = false;
+			soundManager.debugMode = true;
 			soundManager.noSWFCache = true;
 			soundManager.useConsole = false;
 			soundManager.waitForWindowLoad = true;
@@ -101,8 +101,8 @@
 			};
 			//**********End Delete this if you want to use just flash**********//
 			
-			jQuery(window).on('load',function() {
-				var $ = jQuery.noConflict();
+			$(window).on('load',function() {
+				//var $ = jQuery.noConflict();
 				//init component
 				/*
 				param1: 'id' attribute of component holder, 
