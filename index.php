@@ -66,7 +66,7 @@ else $option = '';
             <div id="main">
                 <div id="left">
                     <div id="main-menu" class="sprite">
-                        <a href="/"><div id="logo" class="sprite"></div></a>
+                        <div id="logo" class="sprite"></div>
                         <div id="options">
                             <a href="/"><div id="inicio" class="sprite"><?php if ($option == '') { ?><div></div><?php } ?></div></a>
                             <a href="/quienes-somos"><div id="quienes-somos" class="sprite"><?php if ($option == 'quienes-somos') { ?><div></div><?php } ?></div></a>
@@ -221,7 +221,9 @@ else $option = '';
                     },0);
                 }
             };
-            moveMent();
+            $(window).on('load', function(){
+                moveMent();
+            })
         </script>
     </body>
 </html>
