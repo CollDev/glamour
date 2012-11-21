@@ -8,11 +8,17 @@ else $option = '';
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link type="text/css" href="http://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" media="all">
         <link type="text/css" href="css/styles.css" rel="stylesheet" media="all" />
         <link type="text/css" href="css/sprites.css" rel="stylesheet" media="all" />
         <link type="text/css" href="css/lib/jScrollPane.css" rel="stylesheet" media="all" />
         <link type="text/css" href="css/lib/jquery.lightbox-0.5.css" rel="stylesheet" media="all" />
+        <link type="text/css" href="../css/lib/jScrollPane.css" rel="stylesheet" media="all" />
+        <link type="text/css" href="../css/lib/jquery.lightbox-0.5.css" rel="stylesheet" media="all" />
+        <link type="text/css" href="../css/lib/html5audio2.css" rel="stylesheet" media="all" />
+        
         <style type="text/css" id="page-css">
 <?php
         if ($option == 'productos') {
@@ -80,7 +86,11 @@ else $option = '';
                 </div>
                 <div id="right">
                     <div id="top-head">
-                        <div id="controls"></div>
+                        <div id="controls">
+<?php
+                require_once 'contenido/player.html';
+?>
+                        </div>
                         <div id="top-menu">
                             <a href="/"><div id="home" class="sprite"></div></a>
                             <a href="#"><div id="favoritos" class="sprite"></div></a>
@@ -183,6 +193,11 @@ else $option = '';
 <?php
         }
 ?>
+        <script type="text/javascript" src="js/lib/soundmanager2-nodebug-jsmin.js" ></script>
+        <script type="text/javascript" src="js/lib/jquery.html5audio.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.apPlaylistManager.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.apTextScroller.min.js"></script>
+        <script type="text/javascript" src="js/mediaPlayer.js"></script>
         <script type="text/javascript">
             var time = 3000,
                 slides = $('.slide'),

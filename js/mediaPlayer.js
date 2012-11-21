@@ -32,19 +32,19 @@
 				scrollSeparator: '&nbsp;&#42;&#42;&#42;&nbsp;',
 				
 				/* mediaTimeSeparator: String between current and total song time. */
-				mediaTimeSeparator: '&nbsp;-&nbsp;',
+				mediaTimeSeparator: '',//&nbsp;-&nbsp;
 				/* seekTooltipSeparator: String between current and total song position, for progress tooltip. */
 				seekTooltipSeparator: '&nbsp;/&nbsp;',
 				
 				/* buttonsUrl: url of the buttons for normal and rollover state, so I dont hardcode them in jquery. */
-				buttonsUrl: {prev: '../images/lib/tean/icons/set1/prev.png', prevOn: '../images/lib/tean/icons/set1/prev_on.png', 
-						  	 next: '../images/lib/tean/icons/set1/next.png', nextOn: '../images/lib/tean/icons/set1/next_on.png', 
-						 	 pause: '../images/lib/tean/icons/set1/pause.png', pauseOn: '../images/lib/tean/icons/set1/pause_on.png',
-						 	 play: '../images/lib/tean/icons/set1/play.png', playOn: '../images/lib/tean/icons/set1/play_on.png',
-						 	 volume: '../images/lib/tean/icons/set1/volume.png', volumeOn: '../images/lib/tean/icons/set1/volume_on.png', 
-							 mute: '../images/lib/tean/icons/set1/mute.png', muteOn: '../images/lib/tean/icons/set1/mute_on.png', 
-						  	 loop: '../images/lib/tean/icons/set1/loop.png', loopOn: '../images/lib/tean/icons/set1/loop_on.png',
-						  	 shuffle: '../images/lib/tean/icons/set1/shuffle.png', shuffleOn: '../images/lib/tean/icons/set1/shuffle_on.png'}
+				buttonsUrl: {prev:    '../images/lib/tean/icons/set2/prev.png',    prevOn: '../images/lib/tean/icons/set2/prev_on.png', 
+                                             next:    '../images/lib/tean/icons/set2/next.png',    nextOn: '../images/lib/tean/icons/set2/next_on.png', 
+                                             pause:   '../images/lib/tean/icons/set2/pause.png',   pauseOn: '../images/lib/tean/icons/set2/pause_on.png',
+                                             play:    '../images/lib/tean/icons/set2/play.png',    playOn: '../images/lib/tean/icons/set2/play_on.png',
+                                             volume:  '../images/lib/tean/icons/set2/volume.png',  volumeOn: '../images/lib/tean/icons/set2/volume_on.png', 
+                                             mute:    '../images/lib/tean/icons/set2/mute.png',    muteOn: '../images/lib/tean/icons/set2/mute_on.png', 
+                                             loop:    '../images/lib/tean/icons/set2/loop.png',    loopOn: '../images/lib/tean/icons/set2/loop_on.png',
+                                             shuffle: '../images/lib/tean/icons/set2/shuffle.png', shuffleOn: '../images/lib/tean/icons/set2/shuffle_on.png'}
 			};
 			
 			//sound manager settings (http://www.schillmania.com/projects/soundmanager2/)

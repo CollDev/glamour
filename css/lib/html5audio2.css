@@ -1,56 +1,28 @@
-*{
-	margin:0;
-	padding:0;
-	border:0;
-	outline:none;
-}
-
-a{ 
-	text-decoration: none; 
-}
-
-body {
-	background:#333;
-}
-
-
 /* wrapper for player and playlist */
 #componentWrapper{
-	position:absolute;
-	top:50%;	
-	left:50%;
-	margin-left:-130px;
-	margin-top:-40px;
+	position:relative;
+        height: 100%;
 }
 
 /* player holder */
 #componentWrapper .playerHolder{
-	position:absolute;
-	top:0px;
+	position:relative;
+	top:8px;
 	left:0px;
-	width:262px;
-	height:81px;
-/*	background-image: url('../media/data/player_bg.png'); 
-	background-repeat: repeat-x; */
-	
-	-moz-box-shadow: 0px 5px 5px #111;
-	-webkit-box-shadow: 0px 5px 5px #111;
-	box-shadow: 0px 5px 5px #111;
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#111111')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#111111');
+	width:485px;
+	height:78px;
+        margin-top: 14px;
 }
 
 /* player audio name mask for the name scroll function. Set width of the scrolling mask here. Also adjust height if neccesarry. */
 #componentWrapper .player_mediaName_Mask{
 	position:absolute;
-	top:7px;
-	left:20px;
-	width:140px;
+	top:31px;
+	left:206px;
+	width:220px;
 	height:20px;
 	overflow:hidden;
-	background:#333;
+	background:#bf5e3a;
 }
 
 /* player audio name */
@@ -67,11 +39,10 @@ body {
 
 /* player audio time */
 #componentWrapper .player_mediaTime{
-	position:absolute;
-	top:10px;
-	right:17px;
-	
-	color:#fff;
+	position:relative;
+	top:13px;
+	left: 435px;
+	color:#901214;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:12px;
 }
@@ -85,23 +56,23 @@ body {
 
 #componentWrapper .player_mediaTime_total{
 	position:relative;
-	top:0px;
-	left:0px;
+	top:15px;
+	left:-31px;
 	float:left;
 }
 
 /* player holder for (previous,play/pause,next) buttons */
 #componentWrapper .player_controls{
-	position:absolute;
+	position:relative;
 	top:31px;
-	left:18px;
+	left:5px;
 }
 
 /* player previous */
 #componentWrapper .controls_prev{
 	position:absolute;
 	top:0px;
-	left:0px;
+	left:94px;
 	width:25px;
 	height:26px;
 }
@@ -110,7 +81,7 @@ body {
 #componentWrapper .controls_toggle{
 	position:absolute;
 	top:-2px;
-	left:38px;
+	left:128px;
 	width:30px;
 	height:31px;
 }
@@ -119,7 +90,7 @@ body {
 #componentWrapper .controls_next{
 	position:absolute;
 	top:0px;
-	left:81px;
+	left:167px;
 	width:25px;
 	height:26px;
 }
@@ -145,7 +116,7 @@ body {
 #componentWrapper .player_volume{
 	position:absolute;
 	top:0px;
-	left:130px;
+	left:0px;
 	width:25px;
 	height:26px;
 }
@@ -154,7 +125,7 @@ body {
 #componentWrapper .volume_seekbar{
 	position:absolute;
 	top:4px;
-	left:163px;
+	left:25px;
 	/* for hit */
 	width:70px;
 	height:16px;
@@ -167,7 +138,7 @@ body {
 	left:10px;
 	width:50px;
 	height:6px;
-	background:#333333;
+	background:#BF5E3A;
 }
 
 #componentWrapper .volume_level{
@@ -176,7 +147,7 @@ body {
 	left:10px;
 	width:0px;
 	height:6px;
-	background:#ffffff;
+	background:#EAC8BB;
 }
 
 #componentWrapper .player_volume_tooltip{
@@ -185,7 +156,7 @@ body {
 	/* left is set in code */
 	width:35px;/* width is not automatically set so adjust it yourself if you change font or font size */
 	height:16px;
-	background:#333;
+	background:#D1876C;
 	display:none;
 	
 	-moz-box-shadow: 1px 1px 1px #222;
@@ -197,16 +168,16 @@ body {
 	position:absolute;
 	top:2px;
 	/* left is set in code */
-	color:#ffffff;
+	color:#901214;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:10px;
 }
 
 /* player progress, serves as hit as well */
 #componentWrapper .player_progress{
-	position:absolute;
-	top:63px;
-	left:11px;
+	position:relative;
+	top:46px;
+	left:196px;
 	/* for hit */
 	width:245px;
 	height:16px;
@@ -219,7 +190,7 @@ body {
 	left:10px;
 	width:220px;
 	height:6px;
-	background:#222222;
+	background:#bf5e3a;
 }
 
 #componentWrapper .load_progress{
@@ -228,7 +199,7 @@ body {
 	left:10px;
 	width:0px;
 	height:6px;
-	background:#444444;
+	background:#eac8bb;
 }
 
 #componentWrapper .play_progress{
@@ -237,7 +208,7 @@ body {
 	left:10px;
 	width:0px;
 	height:6px;
-	background:#ffffff;
+	background:#d1876c;
 }
 
 #componentWrapper .player_progress_tooltip{
@@ -246,7 +217,7 @@ body {
 	/* left is set in code */
 	width:70px;/* width is not automatically set so adjust it yourself if you change font or font size */
 	height:16px;
-	background:#333;
+	background:#EAC8BB;
 	display:none;
 	
 	-moz-box-shadow: 1px 1px 1px #222;
@@ -258,7 +229,7 @@ body {
 	position:absolute;
 	top:2px;
 	/* left is set in code */
-	color:#ffffff;
+	color:#901214;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:10px;
 }
