@@ -16,13 +16,13 @@
 
 /* player audio name mask for the name scroll function. Set width of the scrolling mask here. Also adjust height if neccesarry. */
 #componentWrapper .player_mediaName_Mask{
+        border:2px solid #901214;
 	position:absolute;
-	top:31px;
+	top:35px;
 	left:206px;
 	width:220px;
 	height:20px;
 	overflow:hidden;
-	background:#bf5e3a;
 }
 
 /* player audio name */
@@ -31,7 +31,7 @@
 	top:1px;
 	left:0px;
 	white-space: nowrap;
-	
+	margin-left: 6px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:13px;
 	color:#fff;
@@ -40,18 +40,23 @@
 /* player audio time */
 #componentWrapper .player_mediaTime{
 	position:relative;
-	top:13px;
-	left: 435px;
-	color:#901214;
+	top:35px;
+	left: 427px;
+	color:#fff;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:12px;
 }
 
 #componentWrapper .player_mediaTime_current{
+        border:2px solid #901214;
+        border-left: none;
 	position:relative;
 	top:0px;
 	left:0px;
 	float:left;
+        padding: 3px;
+        padding-left: 6px;
+        padding-right: 2px;
 }
 
 #componentWrapper .player_mediaTime_total{
