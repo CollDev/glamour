@@ -4,34 +4,45 @@
 }
 
 body {
-    background-color: #a23806;
+    background-color: #3e1001;
     color:#fff;
     font-size: 13px;
     font-family: 'ABeeZee', sans-serif;
     text-align: center;
-    /*background: url(../images/4.jpg) no-repeat #a23806 center top;*/
-    background: url(../images/background.jpg) no-repeat center top fixed;
-    background-size: cover;
+    /*background: url(../images/background.jpg) no-repeat center top fixed;
+    background-size: cover;*/
 }
 
 #canvas {
-    height: 768px;
     text-align: left;
+    background: url("../images/final1.jpg") no-repeat scroll center top transparent;
+    left: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 926px;
 }
 
 #main {
+    margin-top: 26px;
+    width: 926px;
     height: 570px;
-    padding-top: 26px;
-    position: relative;
-    margin: 0 auto 0 auto;
-    width: 934px;
 }
 
 #left {
     background: url("../images/banner-background.png") no-repeat 56px 8px;
     height: 100%;
     float: left;
-    width: 234px;
+    width: 226px;
 }
 
 #main-menu {
@@ -112,8 +123,7 @@ body {
 
 #actual {
     position: absolute;
-    bottom: 8px;
-    margin-left: 8px;
+    bottom: 172px;
     float: left;
     opacity:0.4;
     filter:alpha(opacity=40); /* For IE8 and earlier */
@@ -273,7 +283,7 @@ body {
 #container {
     float: left;
     text-align: justify;
-    height: 227px;
+    height: 217px;
     width: 700px;
 }
 
