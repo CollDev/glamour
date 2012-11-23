@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #3e1001;
+    background-color: #9f490c;
     color:#fff;
     font-size: 13px;
     font-family: 'ABeeZee', sans-serif;
@@ -15,7 +15,7 @@ body {
 
 #canvas {
     text-align: left;
-    background: url("../images/final1.jpg") no-repeat scroll center top transparent;
+    background: url("../images/background.jpg") no-repeat scroll center top transparent;
     left: 0;
     margin: 0 auto;
     overflow: hidden;
@@ -33,7 +33,6 @@ body {
 }
 
 #main {
-    margin-top: 26px;
     width: 926px;
     height: 570px;
 }
@@ -47,10 +46,11 @@ body {
 
 #main-menu {
     background-position: 0 -255px ;
-    width: 203px;
-    height: 372px;
     float: right;
+    height: 372px;
+    left: 5px;
     position: relative;
+    width: 203px;
     z-index: 1;
 }
 
