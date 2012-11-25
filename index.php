@@ -1,13 +1,10 @@
-<?php
-session_start();
-if(isset($_GET['option']))
+<?php if(isset($_GET['option']))
     $option = $_GET['option'];
-else $option = '';
-?>
-<!doctype html>
-<html>
+else $option = ''; ?>
+<!DOCTYPE html>
+<html lang="es">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link type="text/css" href="http://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" media="all">
