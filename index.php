@@ -8,13 +8,11 @@ else $option = ''; ?>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link type="text/css" href="http://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" media="all">
-        <link type="text/css" href="css/styles.css" rel="stylesheet" media="all" />
-        <link type="text/css" href="css/sprites.css" rel="stylesheet" media="all" />
-        <link type="text/css" href="css/lib/jScrollPane.css" rel="stylesheet" media="all" />
-        <link type="text/css" href="css/lib/jquery.lightbox-0.5.css" rel="stylesheet" media="all" />
-        <link type="text/css" href="../css/lib/jScrollPane.css" rel="stylesheet" media="all" />
-        <link type="text/css" href="../css/lib/jquery.lightbox-0.5.css" rel="stylesheet" media="all" />
-        <link type="text/css" href="../css/lib/html5audio2.css" rel="stylesheet" media="all" />
+        <link type="text/css" href="http://css.glamourspa.pe/styles.css" rel="stylesheet" media="all" />
+        <link type="text/css" href="http://css.glamourspa.pe/sprites.css" rel="stylesheet" media="all" />
+        <link type="text/css" href="http://css.glamourspa.pe/lib/jScrollPane.css" rel="stylesheet" media="all" />
+        <link type="text/css" href="http://css.glamourspa.pe/lib/jquery.lightbox-0.5.css" rel="stylesheet" media="all" />
+        <link type="text/css" href="http://css.glamourspa.pe/lib/html5audio2.css" rel="stylesheet" media="all" />
         
         <style type="text/css" id="page-css">
 <?php
@@ -162,41 +160,41 @@ else $option = ''; ?>
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="js/lib/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" src="js/lib/jquery.mousewheel.js"></script>
-        <script type="text/javascript" src="js/lib/jquery.jscrollpane.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/lib/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/lib/jquery.jscrollpane.min.js"></script>
 <?php
         switch ($option) {
             case 'productos':
 ?>
-        <script type="text/javascript" src="js/lib/jquery.lightbox-0.5.js"></script>
-        <script type="text/javascript" src="js/lib/reflection.js"></script>
-        <script type="text/javascript" src="js/productos.js"></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/lib/jquery.lightbox-0.5.js"></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/lib/reflection.js"></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/productos.js"></script>
 <?php
                 break;
             case 'contactos':
 ?>
-        <script type="text/javascript" src="js/contactos.js"></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/contactos.js"></script>
 <?php
                 break;
             case 'ubiquenos':
 ?>
-        <script type="text/javascript" src="js/lib/jquery.lightbox-0.5.js"></script>
-        <script type="text/javascript" src="js/lib/reflection.js"></script>
-        <script type="text/javascript" src="js/ubiquenos.js"></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/lib/jquery.lightbox-0.5.js"></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/lib/reflection.js"></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/ubiquenos.js"></script>
 <?php
                 break;
             default:
 ?>
-        <script type="text/javascript" src="js/inicio.js"></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/inicio.js"></script>
 <?php
         }
 ?>
-        <script type="text/javascript" src="js/lib/soundmanager2-nodebug-jsmin.js" ></script>
-        <script type="text/javascript" src="js/lib/jquery.html5audio.min.js"></script>
-        <script type="text/javascript" src="js/lib/jquery.apPlaylistManager.min.js"></script>
-        <script type="text/javascript" src="js/lib/jquery.apTextScroller.min.js"></script>
-        <script type="text/javascript" src="js/mediaPlayer.js"></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/lib/soundmanager2-nodebug-jsmin.js" ></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/lib/jquery.html5audio.min.js"></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/lib/jquery.apPlaylistManager.min.js"></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/lib/jquery.apTextScroller.min.js"></script>
+        <script type="text/javascript" src="http://js.glamourspa.pe/mediaPlayer.js"></script>
         <script type="text/javascript">
             var time = 3000,
                 slides = $('.slide'),

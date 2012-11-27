@@ -1,58 +1,58 @@
 .sprite {
-    background: url(../images/sprites.png) no-repeat;
+    background: url(http://images.glamourspa.pe/sprites.png) no-repeat;
 }
 
 .banner {
-    background: url(../images/banner.jpg) no-repeat;
+    background: url(http://images.glamourspa.pe/banner.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;
 }
 
 .inicio {
-    background: url(../images/banner/inicio.jpg) no-repeat;
+    background: url(http://images.glamourspa.pe/banner/inicio.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;
 }
 
 .quienes-somos {
-    background: url(../images/banner/quienes-somos.jpg) no-repeat;
+    background: url(http://images.glamourspa.pe/banner/quienes-somos.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;
 }
 
 .staff {
-    background: url(../images/banner/staff.jpg) no-repeat;
+    background: url(http://images.glamourspa.pe/banner/staff.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;
 }
 
 .servicios {
-    background: url(../images/banner/servicios.jpg) no-repeat;
+    background: url(http://images.glamourspa.pe/banner/servicios.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;
 }
 
 .productos {
-    background: url(../images/banner/productos.jpg) no-repeat;
+    background: url(http://images.glamourspa.pe/banner/productos.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;
 }
 
 .contactos {
-    background: url(../images/banner/contactos.jpg) no-repeat;
+    background: url(http://images.glamourspa.pe/banner/contactos.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;
 }
 
 .ubiquenos {
-    background: url(../images/banner/ubiquenos.jpg) no-repeat;
+    background: url(http://images.glamourspa.pe/banner/ubiquenos.jpg) no-repeat;
     float: left;
     height: 211px;
     width: 651px;
