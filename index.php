@@ -22,7 +22,7 @@ else $option = ''; ?>
                 left: 0;
             }
             .jspTrack{
-                background: url("images/scroll-area-small.png") no-repeat;
+                background: url("http://images.glamourspa.pe/scroll-area-small.png") no-repeat;
             }
             .scroll-pane {
                 width: 180px;
