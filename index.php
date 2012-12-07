@@ -109,7 +109,7 @@ else $option = ''; ?>
                             }
                             for ($i = 0; $i < $slides + 1; ++$i) {
     ?>
-                                <div class="slide <?php if ($option == '') echo 'inicio'; else echo $option; ?> ban-<?php if ($i == $slides) echo 1; else echo $i + 1 ?>"><div></div></div>
+                                <div class="slide <?php if ($option == '') echo 'inicio'; else echo $option; ?> ban-<?php if ($i == $slides) echo 1; else echo $i + 1 ?>"></div>
     <?php
                             }
     ?>

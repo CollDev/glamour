@@ -70,15 +70,6 @@ body {
     margin-bottom: 2px;
 }
 
-#options div div {
-    background: url(http://images.glamourspa.pe/sprites.png) no-repeat;
-    background-position: 18px -52px ;
-    width: 132px;
-    height: 27px;
-    opacity:0.8;
-    filter:alpha(opacity=80); /* For IE8 and earlier */
-}
-
 #inicio {
     background-position: 57px -196px ;
     width: 102px;
@@ -125,7 +116,7 @@ body {
     position: absolute;
     bottom: 180px;
     float: left;
-    opacity:0.4;
+    opacity:0.2;
     filter:alpha(opacity=40); /* For IE8 and earlier */
 }
 
@@ -277,7 +268,7 @@ body {
 }
 
 #content-title {
-    margin: 0 0 10px 20px;
+    margin: 0 0 10px 0;
 }
 
 #container {
@@ -317,7 +308,7 @@ body {
 #promo-title {
     position: relative;
     left: -15px;
-    top: 5px;
+    top: 3px;
 }
 
 #promo-1 {
@@ -380,7 +371,7 @@ body {
 #address-1 {
     position: relative;
     left: -15px;
-    top: 10px;
+    top: 6px;
 }
 
 #right-foot {
