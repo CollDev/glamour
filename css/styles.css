@@ -6,11 +6,10 @@
 body {
     background-color: #9f490c;
     color:#fff;
-    font-size: 13px;
-    font-family: 'ABeeZee', sans-serif;
+    font-size: 14px;
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: lighter;
     text-align: center;
-    /*background: url(../images/background.jpg) no-repeat center top fixed;
-    background-size: cover;*/
 }
 
 #canvas {
@@ -61,13 +60,22 @@ body {
     margin: 30px 0 35px 48px;
 }
 
-#options {
+nav {
     padding-left: 40px;
 }
 
-#options div {
+nav div {
     cursor: pointer;
     margin-bottom: 2px;
+}
+
+nav div div {
+    background: url(http://images.glamourspa.pe/sprites.png) no-repeat;
+    background-position: 18px -52px ;
+    width: 132px;
+    height: 27px;
+    opacity:0.8;
+    filter:alpha(opacity=80); /* For IE8 and earlier */
 }
 
 #inicio {
@@ -121,13 +129,12 @@ body {
 }
 
 #info {
-    font-family: sans-serif;
     width: 148px;
     float: right;
-    text-align: justify;
+    text-align: center;
     padding-right: 16px;
     margin-top: 4px;
-    line-height: 8px;
+    line-height: 14px;
 }
 
 #down-separator {
@@ -144,7 +151,7 @@ body {
     float: left;
 }
 
-#top-head {
+header {
     height: 98px;
 }
 
@@ -154,7 +161,7 @@ body {
     float: left;
 }
 
-#top-menu {
+aside {
     height: 100%;
     width: 210px;
     float: left;
@@ -268,7 +275,7 @@ body {
 }
 
 #content-title {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px 20px;
 }
 
 #container {
@@ -278,7 +285,7 @@ body {
     width: 700px;
 }
 
-#footer {
+footer {
     background: url("http://images.glamourspa.pe/footer-background.png") no-repeat 40px 0px;
     height: 172px;
     position: relative;
@@ -292,7 +299,8 @@ body {
     left: 65px;
     height: 88px;
     width: 280px;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #left-foot div {
@@ -306,48 +314,15 @@ body {
 }
 
 #promo-title {
+    margin-bottom: 5px;
     position: relative;
     left: -15px;
     top: 3px;
 }
 
-#promo-1 {
-    position: relative;
-    left: -15px;
-}
-
-#promo-1-price {
-    position: relative;
-    left: 36px;
-}
-
-#promo-2 {
-    position: relative;
-    left: -15px;
-}
-
-#promo-2-price {
-    position: relative;
-}
-
-#promo-3 {
-    position: relative;
-    left: -15px;
-}
-
-#promo-3-price {
-    position: relative;
-    left: 67px;
-}
-
-#promo-4 {
-    position: relative;
-    left: -15px;
-}
-
-#promo-4-price {
-    position: relative;
-    left: 42px;
+#left-foot span {
+    display: inline-block;
+    vertical-align: top;
 }
 
 #mid-foot {
@@ -356,7 +331,8 @@ body {
     left: 101px;
     height: 88px;
     width: 280px;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #mid-foot div {
@@ -380,7 +356,8 @@ body {
     left: 137px;
     width: 200px;
     height: 70px;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #findus-down {
@@ -417,19 +394,20 @@ body {
 
 .red-micro {
     color: #94130e;
-    font-size: 10px;
     line-height: 14px;
 }
 
 .red-small {
     color: #94130e;
-    font-size: 14px;
     margin-bottom: 7px;
 }
 
 .white-micro {
-    font-size: 10px;
     line-height: 14px;
+}
+
+.white {
+    font-weight: lighter;
 }
 
 .red-big {
@@ -439,11 +417,21 @@ body {
 }
 
 .white-big {
-    font-size: 19px;
+    font-size: 20px;
 }
 
 .red-font {
     color: #94130e;
+}
+
+.promo {
+    left: -15px;
+    position: relative;
+    width: 156px;
+}
+
+.price {
+    width: 60px;
 }
 
 #croquis-small {
@@ -487,10 +475,9 @@ label, input[type="text"] {
 
 input[type="text"] {
     border: none;
-    height: 24px;
+    height: 26px;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
-    font-size: 14px;
 }
 
 textarea {
@@ -507,7 +494,7 @@ textarea {
 }
 
 label {
-    margin-right: 26px;
+    margin-right: 32px;
     padding-top: 7px;
 }
 .field {
@@ -522,7 +509,7 @@ label {
 
 #producto-small {
     float: left;
-    left: 197px;
+    left: 189px;
     position: relative;
     top: -153px;
 }
@@ -532,7 +519,7 @@ label {
     font-size: 10px;
     text-align: left;
     height: 153px;
-    left: 73px;
+    left: -62px;
     overflow: hidden;
     position: relative;
     top: -155px;
@@ -541,8 +528,10 @@ label {
 
 #productos-list {
     background: rgba(255, 255, 255, 0.2);
+    font-size: 12px; 
     line-height: 1px;
     padding: 5px;
+    margin-left: 20px;
 }
 
 #productos-list span{
@@ -678,7 +667,6 @@ label {
     border-radius: 15px 15px 15px 15px;
     color: #FFFFFF;
     display: none;
-    font-family: Arial,"Lucida Grande",sans-serif;
     font-size: 18px;
     left: 50%;
     line-height: 30px;

@@ -7,7 +7,7 @@ else $option = ''; ?>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link type="text/css" href="http://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" media="all">
+        <link type="text/css" href="http://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet" media="all">
         <link type="text/css" href="http://css.glamourspa.pe/styles.css" rel="stylesheet" media="all" />
         <link type="text/css" href="http://css.glamourspa.pe/sprites.css" rel="stylesheet" media="all" />
         <link type="text/css" href="http://css.glamourspa.pe/lib/jScrollPane.css" rel="stylesheet" media="all" />
@@ -63,7 +63,7 @@ else $option = ''; ?>
                     <div id="left">
                         <div id="main-menu" class="sprite">
                             <div id="logo" class="sprite"></div>
-                            <div id="options">
+                            <nav>
                                 <a href="/"><div id="inicio" class="sprite"><?php if ($option == '') { ?><div></div><?php } ?></div></a>
                                 <a href="/quienes-somos"><div id="quienes-somos" class="sprite"><?php if ($option == 'quienes-somos') { ?><div></div><?php } ?></div></a>
                                 <a href="/staff"><div id="staff" class="sprite"><?php if ($option == 'staff') { ?><div></div><?php } ?></div></a>
@@ -71,7 +71,7 @@ else $option = ''; ?>
                                 <a href="/productos"><div id="productos" class="sprite"><?php if ($option == 'productos') { ?><div></div><?php } ?></div></a>
                                 <a href="/contactos"><div id="contactos" class="sprite"><?php if ($option == 'contactos') { ?><div></div><?php } ?></div></a>
                                 <a href="/ubiquenos"><div id="ubiquenos" class="sprite"><?php if ($option == 'ubiquenos') { ?><div></div><?php } ?></div></a>
-                            </div>
+                            </nav>
                         </div>
                         <div id="actual" class="sprite actual-<?php if ($option == '') echo 'inicio'; else echo $option; ?>"></div>
                         <div id="info">
@@ -81,18 +81,18 @@ else $option = ''; ?>
                         <div id="down-separator" class="sprite"></div>
                     </div>
                     <div id="right">
-                        <div id="top-head">
+                        <header>
                             <div id="controls">
     <?php
                     require_once 'contenido/player.html';
     ?>
                             </div>
-                            <div id="top-menu">
+                            <aside>
                                 <a href="/"><div id="home" class="sprite"></div></a>
                                 <a href="#"><div id="favoritos" class="sprite"></div></a>
                                 <a href="#"><div id="contactenos" class="sprite"></div></a>
-                            </div>
-                        </div>
+                            </aside>
+                        </header>
                         <div id="bannerContainer">
                             <div id="bannerWrap">
     <?php
@@ -133,14 +133,13 @@ else $option = ''; ?>
                         </div>
                     </div>
                 </div>
-                <div id="footer">
+                <footer>
                     <div id="left-foot">
                         <div class="sprite"></div>
-                        <span id="promo-title" class="red-font">Promociones 24-09-2012:</span><br />
-                        <span id="promo-1" class="white">Laceado Japones</span> <span id="promo-1-price" class="red-font">20 soles</span><br />
-                        <span id="promo-2" class="white">Tinte especial Koleston</span> <span id="promo-2-price" class="red-font">35 soles</span><br />
-                        <span id="promo-3" class="white">Permanente</span> <span id="promo-3-price" class="red-font">23 soles</span><br />
-                        <span id="promo-4" class="white">Pedicure francés</span> <span id="promo-4-price" class="red-font">35 soles</span>
+                        <span id="promo-title" class="red-font">Promociones 24-09-2012:</span>
+                        <span class="promo white">Laceado Japones</span> <span class="price red-font">20 soles</span>
+                        <span class="promo white">Tinte especial Koleston</span> <span class="price red-font">35 soles</span>
+                        <span class="promo white">Permanente</span> <span class="price red-font">23 soles</span>
                     </div>
                     <div id="mid-foot">
                         <div class="sprite"></div>
@@ -157,7 +156,7 @@ else $option = ''; ?>
                         <div id="youtube" class="sprite"></div>
                         <div id="twitter" class="sprite"></div>
                     </div>
-                </div>
+                </footer>
             </div>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

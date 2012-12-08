@@ -5,7 +5,6 @@
                                     var nombre       = $("input#nombre"),
                                         apellidos    = $("input#apellidos"),
                                         telefono     = $("input#telefono"),
-                                        direccion    = $("input#direccion"),
                                         email        = $("input#email"),
                                         comentario   = $("textarea#comentario"),
                                         nameRegex    = /^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$/,
