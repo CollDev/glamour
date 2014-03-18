@@ -14,7 +14,7 @@ body {
 
 #canvas {
     text-align: left;
-    background: url("http://images.glamourspa.pe/background.jpg") no-repeat scroll center top transparent;
+    background: url("/images/background.jpg") no-repeat scroll center top transparent;
     left: 0;
     margin: 0 auto;
     overflow: hidden;
@@ -37,7 +37,7 @@ body {
 }
 
 #left {
-    background: url("http://images.glamourspa.pe/banner-background.png") no-repeat 56px 8px;
+    background: url("/images/banner-background.png") no-repeat 56px 8px;
     height: 100%;
     float: left;
     width: 226px;
@@ -70,7 +70,7 @@ nav div {
 }
 
 nav div div {
-    background: url(http://images.glamourspa.pe/sprites.png) no-repeat;
+    background: url(/images/sprites.png) no-repeat;
     background-position: 18px -52px ;
     width: 132px;
     height: 27px;
@@ -145,7 +145,7 @@ nav div div {
 }
 
 #right {
-    background: url("http://images.glamourspa.pe/banner-background.png") no-repeat -178px 8px;
+    background: url("/images/banner-background.png") no-repeat -178px 8px;
     height: 100%;
     width: 700px;
     float: left;
@@ -219,7 +219,7 @@ aside {
 }
 
 #bannerWrap div div {
-    background: url(http://images.glamourspa.pe/sprites.png) no-repeat;
+    background: url(/images/sprites.png) no-repeat;
     background-position: -140px 0;
     width: 45px;
     height: 211px;
@@ -286,7 +286,7 @@ aside {
 }
 
 footer {
-    background: url("http://images.glamourspa.pe/footer-background.png") no-repeat 40px 0px;
+    background: url("/images/footer-background.png") no-repeat 40px 0px;
     height: 172px;
     position: relative;
     margin: 0 auto 0 auto;
@@ -600,7 +600,7 @@ label {
     display: none;
     position: absolute;
     z-index: 200;
-    background: url("http://images.glamourspa.pe/msg_arrow.gif") left center no-repeat;
+    background: url("/images/msg_arrow.gif") left center no-repeat;
     padding-left: 7px
 }
 
@@ -636,28 +636,28 @@ label {
 }
 
 #fail div{
-    background: url("http://images.glamourspa.pe/error.png") no-repeat;
+    background: url("/images/error.png") no-repeat;
     height: 32px;
     width: 32px;
     float: left;
 }
 
 #success div{
-    background: url("http://images.glamourspa.pe/success.png") no-repeat;
+    background: url("/images/success.png") no-repeat;
     height: 32px;
     width: 32px;
     float: left;
 }
 
 #notice div{
-    background: url("http://images.glamourspa.pe/notice.png") no-repeat;
+    background: url("/images/notice.png") no-repeat;
     height: 32px;
     width: 32px;
     float: left;
 }
 
 #warning div{
-    background: url("http://images.glamourspa.pe/warning.png") no-repeat;
+    background: url("/images/warning.png") no-repeat;
     height: 32px;
     width: 32px;
     float: left;

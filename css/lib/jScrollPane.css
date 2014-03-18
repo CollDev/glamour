@@ -54,13 +54,13 @@
 
 .jspTrack
 {
-	background: url(http://images.glamourspa.pe/scroll-area.png) repeat-y 18px 0;
+	background: url(/images/scroll-area.png) repeat-y 18px 0;
 	position: relative;
 }
 
 .jspDrag
 {
-	background: url(http://images.glamourspa.pe/scroll.png) no-repeat;
+	background: url(/images/scroll.png) no-repeat;
 	position: relative;
 	top: 0;
 	left: 0;
